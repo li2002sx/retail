@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="merchant" >
+    <resultMap id="BaseResultMap" type="com.mtime.client.retail.model.Merchant" >
+        <id column="MerchantID" property="merchantID" jdbcType="INTEGER" />
+        <result column="MerchantName" property="merchantName" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+        MerchantID, MerchantName
+    </sql>
+    <select id="selectByMerchantId" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from Merchant
+        where MerchantID = #{merchantId,jdbcType=INTEGER}
+    </select>
+</mapper>

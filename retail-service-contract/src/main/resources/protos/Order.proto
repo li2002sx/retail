@@ -1,0 +1,8 @@
+option java_package = "com.mtime.client.retail.contract.dto";
+option java_outer_classname = "OrderProtos";
+
+message Order
+{
+    required int32 OrderID = 1;
+    required string OrderCode = 2;
+}

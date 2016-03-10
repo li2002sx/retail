@@ -1,0 +1,25 @@
+option java_package = "com.mtime.client.retail.contract.dto";
+option java_outer_classname = "CommonProtos";
+
+// 通用返回结果
+message InvokeResult
+{
+    required bool Success = 1;//是否成功
+    optional int32 ErrorCode  = 2;//错误编码
+    optional string ErrorInfo =3;//错误信息
+}
+
+//通用插入返回结果
+message AddInvokeResult
+{
+    required InvokeResult Result = 1;//返回结果
+    optional int32 Id = 2;//返回插入成功后主键Id
+}
+
+// 分页信息
+message PageInfo {
+    // 页码，从 1 开始
+    required	int32	PageIndex = 1;
+    // 每页大小
+    required	int32	PageSize = 2;
+}

@@ -1,0 +1,8 @@
+option java_package = "com.mtime.client.retail.contract.dto";
+option java_outer_classname = "MerchantProtos";
+
+message Merchant
+{
+    optional int32 MerchantID = 1;
+    optional string MerchantName = 2;
+}
