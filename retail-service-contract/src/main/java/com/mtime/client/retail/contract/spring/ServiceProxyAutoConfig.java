@@ -1,6 +1,7 @@
 package com.mtime.client.retail.contract.spring;
 
 import com.mtime.bcl.soa.rpc.RemoteClient;
+import com.mtime.client.retail.contract.iface.OrderInvoiceService;
 import com.mtime.client.retail.contract.iface.OrderService;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
@@ -24,6 +25,9 @@ public class ServiceProxyAutoConfig {
     @Bean
     @ConditionalOnMissingBean
     public OrderService orderService() {
-        return RemoteClient.getService("retail-service", OrderService.class);
+        return RemoteClient.getService("retail-go", OrderService.class);
+    }
+    public OrderInvoiceService orderInvoiceService() {
+        return RemoteClient.getService("retail-go", OrderInvoiceService.class);
     }
 }

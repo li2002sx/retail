@@ -1,9 +1,10 @@
 package com.mtime.client.retail.manager;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import com.mtime.client.retail.dao.OrderDao;
-import com.mtime.client.retail.model.Order;
-import org.springframework.stereotype.Component;
+        import com.mtime.client.retail.contract.dto.OrderProtos;
+        import org.springframework.beans.factory.annotation.Autowired;
+        import com.mtime.client.retail.dao.OrderDao;
+        import com.mtime.client.retail.model.Order;
+        import org.springframework.stereotype.Component;
 
 /**
  * @Title: OrderManager

@@ -1,5 +1,7 @@
 package com.mtime.client.retail.contract.iface;
 
+import com.mtime.bcl.soa.annotations.Service;
+import com.mtime.client.retail.contract.dto.CommonProtos;
 import com.mtime.client.retail.contract.dto.OrderProtos;
 
 /**
@@ -10,8 +12,10 @@ import com.mtime.client.retail.contract.dto.OrderProtos;
  * @date: 2016/2/1 18:01
  * @version: V1.0
  */
+@Service("Order")
 public interface OrderService {
 
-    OrderProtos.Order getOrderById(Integer orderId);
-}
+    //OrderProtos.Order getOrderById(Integer orderId);
 
+    OrderProtos.OrderInfo GetOrderByID(Integer OrderID);
+}

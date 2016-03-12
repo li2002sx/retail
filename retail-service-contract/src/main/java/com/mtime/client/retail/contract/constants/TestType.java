@@ -11,3 +11,7 @@ package com.mtime.client.retail.contract.constants;
 public enum TestType {
 
 }
+
+
+
+

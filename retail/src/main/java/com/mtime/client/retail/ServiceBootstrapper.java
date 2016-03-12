@@ -20,4 +20,8 @@ public class ServiceBootstrapper {
         new ClassPathXmlApplicationContext("etc/spring/spring-root.xml");
         new RemoteServer().run();
     }
+    public static void init() {
+        // HACK: 由于现在的打包部署方式与本地调试运行获取配置文件路径不兼容
+        Config.setConfigDirToClassPath();
+    }
 }

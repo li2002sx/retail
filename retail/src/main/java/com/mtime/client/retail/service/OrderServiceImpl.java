@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * @version: V1.0
  */
 @Component
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceImpl {
 
     @Autowired
     OrderManager orderManager;

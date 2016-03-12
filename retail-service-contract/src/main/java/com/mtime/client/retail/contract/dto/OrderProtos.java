@@ -576,11 +576,10228 @@ public final class OrderProtos {
     // @@protoc_insertion_point(class_scope:Order)
   }
 
+  public interface OrderInfoOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 OrderID = 1;
+    /**
+     * <code>required int32 OrderID = 1;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    boolean hasOrderID();
+    /**
+     * <code>required int32 OrderID = 1;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    int getOrderID();
+
+    // required int32 OperatorID = 2;
+    /**
+     * <code>required int32 OperatorID = 2;</code>
+     *
+     * <pre>
+     * 操作员ID
+     * </pre>
+     */
+    boolean hasOperatorID();
+    /**
+     * <code>required int32 OperatorID = 2;</code>
+     *
+     * <pre>
+     * 操作员ID
+     * </pre>
+     */
+    int getOperatorID();
+
+    // required int32 TerminalID = 3;
+    /**
+     * <code>required int32 TerminalID = 3;</code>
+     *
+     * <pre>
+     * 终端ID
+     * </pre>
+     */
+    boolean hasTerminalID();
+    /**
+     * <code>required int32 TerminalID = 3;</code>
+     *
+     * <pre>
+     * 终端ID
+     * </pre>
+     */
+    int getTerminalID();
+
+    // required int32 StoreID = 4;
+    /**
+     * <code>required int32 StoreID = 4;</code>
+     *
+     * <pre>
+     * 店铺ID
+     * </pre>
+     */
+    boolean hasStoreID();
+    /**
+     * <code>required int32 StoreID = 4;</code>
+     *
+     * <pre>
+     * 店铺ID
+     * </pre>
+     */
+    int getStoreID();
+
+    // required int32 WarehouseID = 5;
+    /**
+     * <code>required int32 WarehouseID = 5;</code>
+     *
+     * <pre>
+     * 仓库ID
+     * </pre>
+     */
+    boolean hasWarehouseID();
+    /**
+     * <code>required int32 WarehouseID = 5;</code>
+     *
+     * <pre>
+     * 仓库ID
+     * </pre>
+     */
+    int getWarehouseID();
+
+    // required int32 OrderStatus = 6;
+    /**
+     * <code>required int32 OrderStatus = 6;</code>
+     *
+     * <pre>
+     * 订单状态，对应GoodsOrderStatus枚举，0-新建，60-已发货
+     * </pre>
+     */
+    boolean hasOrderStatus();
+    /**
+     * <code>required int32 OrderStatus = 6;</code>
+     *
+     * <pre>
+     * 订单状态，对应GoodsOrderStatus枚举，0-新建，60-已发货
+     * </pre>
+     */
+    int getOrderStatus();
+
+    // required string OrderCode = 7;
+    /**
+     * <code>required string OrderCode = 7;</code>
+     *
+     * <pre>
+     * 订单编号
+     * </pre>
+     */
+    boolean hasOrderCode();
+    /**
+     * <code>required string OrderCode = 7;</code>
+     *
+     * <pre>
+     * 订单编号
+     * </pre>
+     */
+    java.lang.String getOrderCode();
+    /**
+     * <code>required string OrderCode = 7;</code>
+     *
+     * <pre>
+     * 订单编号
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getOrderCodeBytes();
+
+    // required string StoreOrderCode = 8;
+    /**
+     * <code>required string StoreOrderCode = 8;</code>
+     *
+     * <pre>
+     * 店内订单编号
+     * </pre>
+     */
+    boolean hasStoreOrderCode();
+    /**
+     * <code>required string StoreOrderCode = 8;</code>
+     *
+     * <pre>
+     * 店内订单编号
+     * </pre>
+     */
+    java.lang.String getStoreOrderCode();
+    /**
+     * <code>required string StoreOrderCode = 8;</code>
+     *
+     * <pre>
+     * 店内订单编号
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getStoreOrderCodeBytes();
+
+    // optional int32 PayStatus = 9;
+    /**
+     * <code>optional int32 PayStatus = 9;</code>
+     *
+     * <pre>
+     * 支付状态，0-未支付，1-已支付
+     * </pre>
+     */
+    boolean hasPayStatus();
+    /**
+     * <code>optional int32 PayStatus = 9;</code>
+     *
+     * <pre>
+     * 支付状态，0-未支付，1-已支付
+     * </pre>
+     */
+    int getPayStatus();
+
+    // optional int64 PayTime = 10;
+    /**
+     * <code>optional int64 PayTime = 10;</code>
+     *
+     * <pre>
+     * 支付时间
+     * </pre>
+     */
+    boolean hasPayTime();
+    /**
+     * <code>optional int64 PayTime = 10;</code>
+     *
+     * <pre>
+     * 支付时间
+     * </pre>
+     */
+    long getPayTime();
+
+    // optional int32 Quantity = 11;
+    /**
+     * <code>optional int32 Quantity = 11;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    boolean hasQuantity();
+    /**
+     * <code>optional int32 Quantity = 11;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    int getQuantity();
+
+    // optional int32 Amount = 12;
+    /**
+     * <code>optional int32 Amount = 12;</code>
+     *
+     * <pre>
+     * 金额，单位分
+     * </pre>
+     */
+    boolean hasAmount();
+    /**
+     * <code>optional int32 Amount = 12;</code>
+     *
+     * <pre>
+     * 金额，单位分
+     * </pre>
+     */
+    int getAmount();
+
+    // optional int32 ActualAmount = 13;
+    /**
+     * <code>optional int32 ActualAmount = 13;</code>
+     *
+     * <pre>
+     * 实际金额，单位分
+     * </pre>
+     */
+    boolean hasActualAmount();
+    /**
+     * <code>optional int32 ActualAmount = 13;</code>
+     *
+     * <pre>
+     * 实际金额，单位分
+     * </pre>
+     */
+    int getActualAmount();
+
+    // optional int64 CreateTime = 14;
+    /**
+     * <code>optional int64 CreateTime = 14;</code>
+     *
+     * <pre>
+     * 创建时间
+     * </pre>
+     */
+    boolean hasCreateTime();
+    /**
+     * <code>optional int64 CreateTime = 14;</code>
+     *
+     * <pre>
+     * 创建时间
+     * </pre>
+     */
+    long getCreateTime();
+
+    // optional string Note = 15;
+    /**
+     * <code>optional string Note = 15;</code>
+     *
+     * <pre>
+     * </pre>
+     */
+    boolean hasNote();
+    /**
+     * <code>optional string Note = 15;</code>
+     *
+     * <pre>
+     * </pre>
+     */
+    java.lang.String getNote();
+    /**
+     * <code>optional string Note = 15;</code>
+     *
+     * <pre>
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getNoteBytes();
+
+    // repeated .OrderLineInfo OrderLineInfos = 16;
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo> 
+        getOrderLineInfosList();
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo getOrderLineInfos(int index);
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    int getOrderLineInfosCount();
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder> 
+        getOrderLineInfosOrBuilderList();
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder getOrderLineInfosOrBuilder(
+        int index);
+
+    // repeated .OrderPaymentInfo PaymentList = 17;
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo> 
+        getPaymentListList();
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo getPaymentList(int index);
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    int getPaymentListCount();
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder> 
+        getPaymentListOrBuilderList();
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder getPaymentListOrBuilder(
+        int index);
+
+    // optional int32 CinemaID = 19;
+    /**
+     * <code>optional int32 CinemaID = 19;</code>
+     *
+     * <pre>
+     *影院ID
+     * </pre>
+     */
+    boolean hasCinemaID();
+    /**
+     * <code>optional int32 CinemaID = 19;</code>
+     *
+     * <pre>
+     *影院ID
+     * </pre>
+     */
+    int getCinemaID();
+
+    // optional int32 DeductAmount = 20;
+    /**
+     * <code>optional int32 DeductAmount = 20;</code>
+     *
+     * <pre>
+     *抵扣金额
+     * </pre>
+     */
+    boolean hasDeductAmount();
+    /**
+     * <code>optional int32 DeductAmount = 20;</code>
+     *
+     * <pre>
+     *抵扣金额
+     * </pre>
+     */
+    int getDeductAmount();
+
+    // repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo> 
+        getOrderLineActivityInfosList();
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo getOrderLineActivityInfos(int index);
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    int getOrderLineActivityInfosCount();
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder> 
+        getOrderLineActivityInfosOrBuilderList();
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder getOrderLineActivityInfosOrBuilder(
+        int index);
+
+    // optional .OrderInvoiceInfo InvoiceInfo = 22;
+    /**
+     * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+     *
+     * <pre>
+     *发票信息
+     * </pre>
+     */
+    boolean hasInvoiceInfo();
+    /**
+     * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+     *
+     * <pre>
+     *发票信息
+     * </pre>
+     */
+    com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo getInvoiceInfo();
+    /**
+     * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+     *
+     * <pre>
+     *发票信息
+     * </pre>
+     */
+    com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfoOrBuilder getInvoiceInfoOrBuilder();
+  }
+  /**
+   * Protobuf type {@code OrderInfo}
+   *
+   * <pre>
+   *零售订单
+   * </pre>
+   */
+  public static final class OrderInfo extends
+      com.google.protobuf.GeneratedMessage
+      implements OrderInfoOrBuilder {
+    // Use OrderInfo.newBuilder() to construct.
+    private OrderInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private OrderInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final OrderInfo defaultInstance;
+    public static OrderInfo getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public OrderInfo getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private OrderInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              orderID_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              operatorID_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              terminalID_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              storeID_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              warehouseID_ = input.readInt32();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              orderStatus_ = input.readInt32();
+              break;
+            }
+            case 58: {
+              bitField0_ |= 0x00000040;
+              orderCode_ = input.readBytes();
+              break;
+            }
+            case 66: {
+              bitField0_ |= 0x00000080;
+              storeOrderCode_ = input.readBytes();
+              break;
+            }
+            case 72: {
+              bitField0_ |= 0x00000100;
+              payStatus_ = input.readInt32();
+              break;
+            }
+            case 80: {
+              bitField0_ |= 0x00000200;
+              payTime_ = input.readInt64();
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000400;
+              quantity_ = input.readInt32();
+              break;
+            }
+            case 96: {
+              bitField0_ |= 0x00000800;
+              amount_ = input.readInt32();
+              break;
+            }
+            case 104: {
+              bitField0_ |= 0x00001000;
+              actualAmount_ = input.readInt32();
+              break;
+            }
+            case 112: {
+              bitField0_ |= 0x00002000;
+              createTime_ = input.readInt64();
+              break;
+            }
+            case 122: {
+              bitField0_ |= 0x00004000;
+              note_ = input.readBytes();
+              break;
+            }
+            case 130: {
+              if (!((mutable_bitField0_ & 0x00008000) == 0x00008000)) {
+                orderLineInfos_ = new java.util.ArrayList<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo>();
+                mutable_bitField0_ |= 0x00008000;
+              }
+              orderLineInfos_.add(input.readMessage(com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.PARSER, extensionRegistry));
+              break;
+            }
+            case 138: {
+              if (!((mutable_bitField0_ & 0x00010000) == 0x00010000)) {
+                paymentList_ = new java.util.ArrayList<com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo>();
+                mutable_bitField0_ |= 0x00010000;
+              }
+              paymentList_.add(input.readMessage(com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.PARSER, extensionRegistry));
+              break;
+            }
+            case 152: {
+              bitField0_ |= 0x00008000;
+              cinemaID_ = input.readInt32();
+              break;
+            }
+            case 160: {
+              bitField0_ |= 0x00010000;
+              deductAmount_ = input.readInt32();
+              break;
+            }
+            case 170: {
+              if (!((mutable_bitField0_ & 0x00080000) == 0x00080000)) {
+                orderLineActivityInfos_ = new java.util.ArrayList<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo>();
+                mutable_bitField0_ |= 0x00080000;
+              }
+              orderLineActivityInfos_.add(input.readMessage(com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.PARSER, extensionRegistry));
+              break;
+            }
+            case 178: {
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.Builder subBuilder = null;
+              if (((bitField0_ & 0x00020000) == 0x00020000)) {
+                subBuilder = invoiceInfo_.toBuilder();
+              }
+              invoiceInfo_ = input.readMessage(com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(invoiceInfo_);
+                invoiceInfo_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00020000;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00008000) == 0x00008000)) {
+          orderLineInfos_ = java.util.Collections.unmodifiableList(orderLineInfos_);
+        }
+        if (((mutable_bitField0_ & 0x00010000) == 0x00010000)) {
+          paymentList_ = java.util.Collections.unmodifiableList(paymentList_);
+        }
+        if (((mutable_bitField0_ & 0x00080000) == 0x00080000)) {
+          orderLineActivityInfos_ = java.util.Collections.unmodifiableList(orderLineActivityInfos_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<OrderInfo> PARSER =
+        new com.google.protobuf.AbstractParser<OrderInfo>() {
+      public OrderInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new OrderInfo(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<OrderInfo> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 OrderID = 1;
+    public static final int ORDERID_FIELD_NUMBER = 1;
+    private int orderID_;
+    /**
+     * <code>required int32 OrderID = 1;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    public boolean hasOrderID() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 OrderID = 1;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    public int getOrderID() {
+      return orderID_;
+    }
+
+    // required int32 OperatorID = 2;
+    public static final int OPERATORID_FIELD_NUMBER = 2;
+    private int operatorID_;
+    /**
+     * <code>required int32 OperatorID = 2;</code>
+     *
+     * <pre>
+     * 操作员ID
+     * </pre>
+     */
+    public boolean hasOperatorID() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 OperatorID = 2;</code>
+     *
+     * <pre>
+     * 操作员ID
+     * </pre>
+     */
+    public int getOperatorID() {
+      return operatorID_;
+    }
+
+    // required int32 TerminalID = 3;
+    public static final int TERMINALID_FIELD_NUMBER = 3;
+    private int terminalID_;
+    /**
+     * <code>required int32 TerminalID = 3;</code>
+     *
+     * <pre>
+     * 终端ID
+     * </pre>
+     */
+    public boolean hasTerminalID() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required int32 TerminalID = 3;</code>
+     *
+     * <pre>
+     * 终端ID
+     * </pre>
+     */
+    public int getTerminalID() {
+      return terminalID_;
+    }
+
+    // required int32 StoreID = 4;
+    public static final int STOREID_FIELD_NUMBER = 4;
+    private int storeID_;
+    /**
+     * <code>required int32 StoreID = 4;</code>
+     *
+     * <pre>
+     * 店铺ID
+     * </pre>
+     */
+    public boolean hasStoreID() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required int32 StoreID = 4;</code>
+     *
+     * <pre>
+     * 店铺ID
+     * </pre>
+     */
+    public int getStoreID() {
+      return storeID_;
+    }
+
+    // required int32 WarehouseID = 5;
+    public static final int WAREHOUSEID_FIELD_NUMBER = 5;
+    private int warehouseID_;
+    /**
+     * <code>required int32 WarehouseID = 5;</code>
+     *
+     * <pre>
+     * 仓库ID
+     * </pre>
+     */
+    public boolean hasWarehouseID() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>required int32 WarehouseID = 5;</code>
+     *
+     * <pre>
+     * 仓库ID
+     * </pre>
+     */
+    public int getWarehouseID() {
+      return warehouseID_;
+    }
+
+    // required int32 OrderStatus = 6;
+    public static final int ORDERSTATUS_FIELD_NUMBER = 6;
+    private int orderStatus_;
+    /**
+     * <code>required int32 OrderStatus = 6;</code>
+     *
+     * <pre>
+     * 订单状态，对应GoodsOrderStatus枚举，0-新建，60-已发货
+     * </pre>
+     */
+    public boolean hasOrderStatus() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>required int32 OrderStatus = 6;</code>
+     *
+     * <pre>
+     * 订单状态，对应GoodsOrderStatus枚举，0-新建，60-已发货
+     * </pre>
+     */
+    public int getOrderStatus() {
+      return orderStatus_;
+    }
+
+    // required string OrderCode = 7;
+    public static final int ORDERCODE_FIELD_NUMBER = 7;
+    private java.lang.Object orderCode_;
+    /**
+     * <code>required string OrderCode = 7;</code>
+     *
+     * <pre>
+     * 订单编号
+     * </pre>
+     */
+    public boolean hasOrderCode() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>required string OrderCode = 7;</code>
+     *
+     * <pre>
+     * 订单编号
+     * </pre>
+     */
+    public java.lang.String getOrderCode() {
+      java.lang.Object ref = orderCode_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          orderCode_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string OrderCode = 7;</code>
+     *
+     * <pre>
+     * 订单编号
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getOrderCodeBytes() {
+      java.lang.Object ref = orderCode_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        orderCode_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required string StoreOrderCode = 8;
+    public static final int STOREORDERCODE_FIELD_NUMBER = 8;
+    private java.lang.Object storeOrderCode_;
+    /**
+     * <code>required string StoreOrderCode = 8;</code>
+     *
+     * <pre>
+     * 店内订单编号
+     * </pre>
+     */
+    public boolean hasStoreOrderCode() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>required string StoreOrderCode = 8;</code>
+     *
+     * <pre>
+     * 店内订单编号
+     * </pre>
+     */
+    public java.lang.String getStoreOrderCode() {
+      java.lang.Object ref = storeOrderCode_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          storeOrderCode_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string StoreOrderCode = 8;</code>
+     *
+     * <pre>
+     * 店内订单编号
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getStoreOrderCodeBytes() {
+      java.lang.Object ref = storeOrderCode_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        storeOrderCode_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int32 PayStatus = 9;
+    public static final int PAYSTATUS_FIELD_NUMBER = 9;
+    private int payStatus_;
+    /**
+     * <code>optional int32 PayStatus = 9;</code>
+     *
+     * <pre>
+     * 支付状态，0-未支付，1-已支付
+     * </pre>
+     */
+    public boolean hasPayStatus() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>optional int32 PayStatus = 9;</code>
+     *
+     * <pre>
+     * 支付状态，0-未支付，1-已支付
+     * </pre>
+     */
+    public int getPayStatus() {
+      return payStatus_;
+    }
+
+    // optional int64 PayTime = 10;
+    public static final int PAYTIME_FIELD_NUMBER = 10;
+    private long payTime_;
+    /**
+     * <code>optional int64 PayTime = 10;</code>
+     *
+     * <pre>
+     * 支付时间
+     * </pre>
+     */
+    public boolean hasPayTime() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    /**
+     * <code>optional int64 PayTime = 10;</code>
+     *
+     * <pre>
+     * 支付时间
+     * </pre>
+     */
+    public long getPayTime() {
+      return payTime_;
+    }
+
+    // optional int32 Quantity = 11;
+    public static final int QUANTITY_FIELD_NUMBER = 11;
+    private int quantity_;
+    /**
+     * <code>optional int32 Quantity = 11;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    public boolean hasQuantity() {
+      return ((bitField0_ & 0x00000400) == 0x00000400);
+    }
+    /**
+     * <code>optional int32 Quantity = 11;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    public int getQuantity() {
+      return quantity_;
+    }
+
+    // optional int32 Amount = 12;
+    public static final int AMOUNT_FIELD_NUMBER = 12;
+    private int amount_;
+    /**
+     * <code>optional int32 Amount = 12;</code>
+     *
+     * <pre>
+     * 金额，单位分
+     * </pre>
+     */
+    public boolean hasAmount() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    /**
+     * <code>optional int32 Amount = 12;</code>
+     *
+     * <pre>
+     * 金额，单位分
+     * </pre>
+     */
+    public int getAmount() {
+      return amount_;
+    }
+
+    // optional int32 ActualAmount = 13;
+    public static final int ACTUALAMOUNT_FIELD_NUMBER = 13;
+    private int actualAmount_;
+    /**
+     * <code>optional int32 ActualAmount = 13;</code>
+     *
+     * <pre>
+     * 实际金额，单位分
+     * </pre>
+     */
+    public boolean hasActualAmount() {
+      return ((bitField0_ & 0x00001000) == 0x00001000);
+    }
+    /**
+     * <code>optional int32 ActualAmount = 13;</code>
+     *
+     * <pre>
+     * 实际金额，单位分
+     * </pre>
+     */
+    public int getActualAmount() {
+      return actualAmount_;
+    }
+
+    // optional int64 CreateTime = 14;
+    public static final int CREATETIME_FIELD_NUMBER = 14;
+    private long createTime_;
+    /**
+     * <code>optional int64 CreateTime = 14;</code>
+     *
+     * <pre>
+     * 创建时间
+     * </pre>
+     */
+    public boolean hasCreateTime() {
+      return ((bitField0_ & 0x00002000) == 0x00002000);
+    }
+    /**
+     * <code>optional int64 CreateTime = 14;</code>
+     *
+     * <pre>
+     * 创建时间
+     * </pre>
+     */
+    public long getCreateTime() {
+      return createTime_;
+    }
+
+    // optional string Note = 15;
+    public static final int NOTE_FIELD_NUMBER = 15;
+    private java.lang.Object note_;
+    /**
+     * <code>optional string Note = 15;</code>
+     *
+     * <pre>
+     * </pre>
+     */
+    public boolean hasNote() {
+      return ((bitField0_ & 0x00004000) == 0x00004000);
+    }
+    /**
+     * <code>optional string Note = 15;</code>
+     *
+     * <pre>
+     * </pre>
+     */
+    public java.lang.String getNote() {
+      java.lang.Object ref = note_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          note_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string Note = 15;</code>
+     *
+     * <pre>
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getNoteBytes() {
+      java.lang.Object ref = note_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        note_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // repeated .OrderLineInfo OrderLineInfos = 16;
+    public static final int ORDERLINEINFOS_FIELD_NUMBER = 16;
+    private java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo> orderLineInfos_;
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo> getOrderLineInfosList() {
+      return orderLineInfos_;
+    }
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    public java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder> 
+        getOrderLineInfosOrBuilderList() {
+      return orderLineInfos_;
+    }
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    public int getOrderLineInfosCount() {
+      return orderLineInfos_.size();
+    }
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo getOrderLineInfos(int index) {
+      return orderLineInfos_.get(index);
+    }
+    /**
+     * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+     *
+     * <pre>
+     *订单明细
+     * </pre>
+     */
+    public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder getOrderLineInfosOrBuilder(
+        int index) {
+      return orderLineInfos_.get(index);
+    }
+
+    // repeated .OrderPaymentInfo PaymentList = 17;
+    public static final int PAYMENTLIST_FIELD_NUMBER = 17;
+    private java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo> paymentList_;
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo> getPaymentListList() {
+      return paymentList_;
+    }
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    public java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder> 
+        getPaymentListOrBuilderList() {
+      return paymentList_;
+    }
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    public int getPaymentListCount() {
+      return paymentList_.size();
+    }
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo getPaymentList(int index) {
+      return paymentList_.get(index);
+    }
+    /**
+     * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+     *
+     * <pre>
+     *支付流水
+     * </pre>
+     */
+    public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder getPaymentListOrBuilder(
+        int index) {
+      return paymentList_.get(index);
+    }
+
+    // optional int32 CinemaID = 19;
+    public static final int CINEMAID_FIELD_NUMBER = 19;
+    private int cinemaID_;
+    /**
+     * <code>optional int32 CinemaID = 19;</code>
+     *
+     * <pre>
+     *影院ID
+     * </pre>
+     */
+    public boolean hasCinemaID() {
+      return ((bitField0_ & 0x00008000) == 0x00008000);
+    }
+    /**
+     * <code>optional int32 CinemaID = 19;</code>
+     *
+     * <pre>
+     *影院ID
+     * </pre>
+     */
+    public int getCinemaID() {
+      return cinemaID_;
+    }
+
+    // optional int32 DeductAmount = 20;
+    public static final int DEDUCTAMOUNT_FIELD_NUMBER = 20;
+    private int deductAmount_;
+    /**
+     * <code>optional int32 DeductAmount = 20;</code>
+     *
+     * <pre>
+     *抵扣金额
+     * </pre>
+     */
+    public boolean hasDeductAmount() {
+      return ((bitField0_ & 0x00010000) == 0x00010000);
+    }
+    /**
+     * <code>optional int32 DeductAmount = 20;</code>
+     *
+     * <pre>
+     *抵扣金额
+     * </pre>
+     */
+    public int getDeductAmount() {
+      return deductAmount_;
+    }
+
+    // repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;
+    public static final int ORDERLINEACTIVITYINFOS_FIELD_NUMBER = 21;
+    private java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo> orderLineActivityInfos_;
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo> getOrderLineActivityInfosList() {
+      return orderLineActivityInfos_;
+    }
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    public java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder> 
+        getOrderLineActivityInfosOrBuilderList() {
+      return orderLineActivityInfos_;
+    }
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    public int getOrderLineActivityInfosCount() {
+      return orderLineActivityInfos_.size();
+    }
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo getOrderLineActivityInfos(int index) {
+      return orderLineActivityInfos_.get(index);
+    }
+    /**
+     * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+     *
+     * <pre>
+     *子订单活动信息
+     * </pre>
+     */
+    public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder getOrderLineActivityInfosOrBuilder(
+        int index) {
+      return orderLineActivityInfos_.get(index);
+    }
+
+    // optional .OrderInvoiceInfo InvoiceInfo = 22;
+    public static final int INVOICEINFO_FIELD_NUMBER = 22;
+    private com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo invoiceInfo_;
+    /**
+     * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+     *
+     * <pre>
+     *发票信息
+     * </pre>
+     */
+    public boolean hasInvoiceInfo() {
+      return ((bitField0_ & 0x00020000) == 0x00020000);
+    }
+    /**
+     * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+     *
+     * <pre>
+     *发票信息
+     * </pre>
+     */
+    public com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo getInvoiceInfo() {
+      return invoiceInfo_;
+    }
+    /**
+     * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+     *
+     * <pre>
+     *发票信息
+     * </pre>
+     */
+    public com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfoOrBuilder getInvoiceInfoOrBuilder() {
+      return invoiceInfo_;
+    }
+
+    private void initFields() {
+      orderID_ = 0;
+      operatorID_ = 0;
+      terminalID_ = 0;
+      storeID_ = 0;
+      warehouseID_ = 0;
+      orderStatus_ = 0;
+      orderCode_ = "";
+      storeOrderCode_ = "";
+      payStatus_ = 0;
+      payTime_ = 0L;
+      quantity_ = 0;
+      amount_ = 0;
+      actualAmount_ = 0;
+      createTime_ = 0L;
+      note_ = "";
+      orderLineInfos_ = java.util.Collections.emptyList();
+      paymentList_ = java.util.Collections.emptyList();
+      cinemaID_ = 0;
+      deductAmount_ = 0;
+      orderLineActivityInfos_ = java.util.Collections.emptyList();
+      invoiceInfo_ = com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasOrderID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOperatorID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasTerminalID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasStoreID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasWarehouseID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOrderStatus()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOrderCode()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasStoreOrderCode()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getOrderLineInfosCount(); i++) {
+        if (!getOrderLineInfos(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      for (int i = 0; i < getPaymentListCount(); i++) {
+        if (!getPaymentList(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      for (int i = 0; i < getOrderLineActivityInfosCount(); i++) {
+        if (!getOrderLineActivityInfos(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasInvoiceInfo()) {
+        if (!getInvoiceInfo().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, orderID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, operatorID_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, terminalID_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, storeID_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, warehouseID_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt32(6, orderStatus_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeBytes(7, getOrderCodeBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeBytes(8, getStoreOrderCodeBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeInt32(9, payStatus_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeInt64(10, payTime_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        output.writeInt32(11, quantity_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        output.writeInt32(12, amount_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        output.writeInt32(13, actualAmount_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        output.writeInt64(14, createTime_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        output.writeBytes(15, getNoteBytes());
+      }
+      for (int i = 0; i < orderLineInfos_.size(); i++) {
+        output.writeMessage(16, orderLineInfos_.get(i));
+      }
+      for (int i = 0; i < paymentList_.size(); i++) {
+        output.writeMessage(17, paymentList_.get(i));
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        output.writeInt32(19, cinemaID_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        output.writeInt32(20, deductAmount_);
+      }
+      for (int i = 0; i < orderLineActivityInfos_.size(); i++) {
+        output.writeMessage(21, orderLineActivityInfos_.get(i));
+      }
+      if (((bitField0_ & 0x00020000) == 0x00020000)) {
+        output.writeMessage(22, invoiceInfo_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, orderID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, operatorID_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, terminalID_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, storeID_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, warehouseID_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, orderStatus_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(7, getOrderCodeBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(8, getStoreOrderCodeBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, payStatus_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(10, payTime_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, quantity_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, amount_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, actualAmount_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(14, createTime_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(15, getNoteBytes());
+      }
+      for (int i = 0; i < orderLineInfos_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(16, orderLineInfos_.get(i));
+      }
+      for (int i = 0; i < paymentList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(17, paymentList_.get(i));
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(19, cinemaID_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(20, deductAmount_);
+      }
+      for (int i = 0; i < orderLineActivityInfos_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(21, orderLineActivityInfos_.get(i));
+      }
+      if (((bitField0_ & 0x00020000) == 0x00020000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(22, invoiceInfo_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code OrderInfo}
+     *
+     * <pre>
+     *零售订单
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.mtime.client.retail.contract.dto.OrderProtos.OrderInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo.Builder.class);
+      }
+
+      // Construct using com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getOrderLineInfosFieldBuilder();
+          getPaymentListFieldBuilder();
+          getOrderLineActivityInfosFieldBuilder();
+          getInvoiceInfoFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        orderID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        operatorID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        terminalID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        storeID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        warehouseID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        orderStatus_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        orderCode_ = "";
+        bitField0_ = (bitField0_ & ~0x00000040);
+        storeOrderCode_ = "";
+        bitField0_ = (bitField0_ & ~0x00000080);
+        payStatus_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000100);
+        payTime_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000200);
+        quantity_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000400);
+        amount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000800);
+        actualAmount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00001000);
+        createTime_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00002000);
+        note_ = "";
+        bitField0_ = (bitField0_ & ~0x00004000);
+        if (orderLineInfosBuilder_ == null) {
+          orderLineInfos_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00008000);
+        } else {
+          orderLineInfosBuilder_.clear();
+        }
+        if (paymentListBuilder_ == null) {
+          paymentList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00010000);
+        } else {
+          paymentListBuilder_.clear();
+        }
+        cinemaID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00020000);
+        deductAmount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00040000);
+        if (orderLineActivityInfosBuilder_ == null) {
+          orderLineActivityInfos_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00080000);
+        } else {
+          orderLineActivityInfosBuilder_.clear();
+        }
+        if (invoiceInfoBuilder_ == null) {
+          invoiceInfo_ = com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.getDefaultInstance();
+        } else {
+          invoiceInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00100000);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInfo_descriptor;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo getDefaultInstanceForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo.getDefaultInstance();
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo build() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo buildPartial() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo result = new com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.orderID_ = orderID_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.operatorID_ = operatorID_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.terminalID_ = terminalID_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.storeID_ = storeID_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.warehouseID_ = warehouseID_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.orderStatus_ = orderStatus_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.orderCode_ = orderCode_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.storeOrderCode_ = storeOrderCode_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.payStatus_ = payStatus_;
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        result.payTime_ = payTime_;
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000400;
+        }
+        result.quantity_ = quantity_;
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        result.amount_ = amount_;
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00001000;
+        }
+        result.actualAmount_ = actualAmount_;
+        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+          to_bitField0_ |= 0x00002000;
+        }
+        result.createTime_ = createTime_;
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00004000;
+        }
+        result.note_ = note_;
+        if (orderLineInfosBuilder_ == null) {
+          if (((bitField0_ & 0x00008000) == 0x00008000)) {
+            orderLineInfos_ = java.util.Collections.unmodifiableList(orderLineInfos_);
+            bitField0_ = (bitField0_ & ~0x00008000);
+          }
+          result.orderLineInfos_ = orderLineInfos_;
+        } else {
+          result.orderLineInfos_ = orderLineInfosBuilder_.build();
+        }
+        if (paymentListBuilder_ == null) {
+          if (((bitField0_ & 0x00010000) == 0x00010000)) {
+            paymentList_ = java.util.Collections.unmodifiableList(paymentList_);
+            bitField0_ = (bitField0_ & ~0x00010000);
+          }
+          result.paymentList_ = paymentList_;
+        } else {
+          result.paymentList_ = paymentListBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+          to_bitField0_ |= 0x00008000;
+        }
+        result.cinemaID_ = cinemaID_;
+        if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
+          to_bitField0_ |= 0x00010000;
+        }
+        result.deductAmount_ = deductAmount_;
+        if (orderLineActivityInfosBuilder_ == null) {
+          if (((bitField0_ & 0x00080000) == 0x00080000)) {
+            orderLineActivityInfos_ = java.util.Collections.unmodifiableList(orderLineActivityInfos_);
+            bitField0_ = (bitField0_ & ~0x00080000);
+          }
+          result.orderLineActivityInfos_ = orderLineActivityInfos_;
+        } else {
+          result.orderLineActivityInfos_ = orderLineActivityInfosBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00100000) == 0x00100000)) {
+          to_bitField0_ |= 0x00020000;
+        }
+        if (invoiceInfoBuilder_ == null) {
+          result.invoiceInfo_ = invoiceInfo_;
+        } else {
+          result.invoiceInfo_ = invoiceInfoBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo) {
+          return mergeFrom((com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo other) {
+        if (other == com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo.getDefaultInstance()) return this;
+        if (other.hasOrderID()) {
+          setOrderID(other.getOrderID());
+        }
+        if (other.hasOperatorID()) {
+          setOperatorID(other.getOperatorID());
+        }
+        if (other.hasTerminalID()) {
+          setTerminalID(other.getTerminalID());
+        }
+        if (other.hasStoreID()) {
+          setStoreID(other.getStoreID());
+        }
+        if (other.hasWarehouseID()) {
+          setWarehouseID(other.getWarehouseID());
+        }
+        if (other.hasOrderStatus()) {
+          setOrderStatus(other.getOrderStatus());
+        }
+        if (other.hasOrderCode()) {
+          bitField0_ |= 0x00000040;
+          orderCode_ = other.orderCode_;
+          onChanged();
+        }
+        if (other.hasStoreOrderCode()) {
+          bitField0_ |= 0x00000080;
+          storeOrderCode_ = other.storeOrderCode_;
+          onChanged();
+        }
+        if (other.hasPayStatus()) {
+          setPayStatus(other.getPayStatus());
+        }
+        if (other.hasPayTime()) {
+          setPayTime(other.getPayTime());
+        }
+        if (other.hasQuantity()) {
+          setQuantity(other.getQuantity());
+        }
+        if (other.hasAmount()) {
+          setAmount(other.getAmount());
+        }
+        if (other.hasActualAmount()) {
+          setActualAmount(other.getActualAmount());
+        }
+        if (other.hasCreateTime()) {
+          setCreateTime(other.getCreateTime());
+        }
+        if (other.hasNote()) {
+          bitField0_ |= 0x00004000;
+          note_ = other.note_;
+          onChanged();
+        }
+        if (orderLineInfosBuilder_ == null) {
+          if (!other.orderLineInfos_.isEmpty()) {
+            if (orderLineInfos_.isEmpty()) {
+              orderLineInfos_ = other.orderLineInfos_;
+              bitField0_ = (bitField0_ & ~0x00008000);
+            } else {
+              ensureOrderLineInfosIsMutable();
+              orderLineInfos_.addAll(other.orderLineInfos_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.orderLineInfos_.isEmpty()) {
+            if (orderLineInfosBuilder_.isEmpty()) {
+              orderLineInfosBuilder_.dispose();
+              orderLineInfosBuilder_ = null;
+              orderLineInfos_ = other.orderLineInfos_;
+              bitField0_ = (bitField0_ & ~0x00008000);
+              orderLineInfosBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getOrderLineInfosFieldBuilder() : null;
+            } else {
+              orderLineInfosBuilder_.addAllMessages(other.orderLineInfos_);
+            }
+          }
+        }
+        if (paymentListBuilder_ == null) {
+          if (!other.paymentList_.isEmpty()) {
+            if (paymentList_.isEmpty()) {
+              paymentList_ = other.paymentList_;
+              bitField0_ = (bitField0_ & ~0x00010000);
+            } else {
+              ensurePaymentListIsMutable();
+              paymentList_.addAll(other.paymentList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.paymentList_.isEmpty()) {
+            if (paymentListBuilder_.isEmpty()) {
+              paymentListBuilder_.dispose();
+              paymentListBuilder_ = null;
+              paymentList_ = other.paymentList_;
+              bitField0_ = (bitField0_ & ~0x00010000);
+              paymentListBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getPaymentListFieldBuilder() : null;
+            } else {
+              paymentListBuilder_.addAllMessages(other.paymentList_);
+            }
+          }
+        }
+        if (other.hasCinemaID()) {
+          setCinemaID(other.getCinemaID());
+        }
+        if (other.hasDeductAmount()) {
+          setDeductAmount(other.getDeductAmount());
+        }
+        if (orderLineActivityInfosBuilder_ == null) {
+          if (!other.orderLineActivityInfos_.isEmpty()) {
+            if (orderLineActivityInfos_.isEmpty()) {
+              orderLineActivityInfos_ = other.orderLineActivityInfos_;
+              bitField0_ = (bitField0_ & ~0x00080000);
+            } else {
+              ensureOrderLineActivityInfosIsMutable();
+              orderLineActivityInfos_.addAll(other.orderLineActivityInfos_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.orderLineActivityInfos_.isEmpty()) {
+            if (orderLineActivityInfosBuilder_.isEmpty()) {
+              orderLineActivityInfosBuilder_.dispose();
+              orderLineActivityInfosBuilder_ = null;
+              orderLineActivityInfos_ = other.orderLineActivityInfos_;
+              bitField0_ = (bitField0_ & ~0x00080000);
+              orderLineActivityInfosBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getOrderLineActivityInfosFieldBuilder() : null;
+            } else {
+              orderLineActivityInfosBuilder_.addAllMessages(other.orderLineActivityInfos_);
+            }
+          }
+        }
+        if (other.hasInvoiceInfo()) {
+          mergeInvoiceInfo(other.getInvoiceInfo());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasOrderID()) {
+          
+          return false;
+        }
+        if (!hasOperatorID()) {
+          
+          return false;
+        }
+        if (!hasTerminalID()) {
+          
+          return false;
+        }
+        if (!hasStoreID()) {
+          
+          return false;
+        }
+        if (!hasWarehouseID()) {
+          
+          return false;
+        }
+        if (!hasOrderStatus()) {
+          
+          return false;
+        }
+        if (!hasOrderCode()) {
+          
+          return false;
+        }
+        if (!hasStoreOrderCode()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getOrderLineInfosCount(); i++) {
+          if (!getOrderLineInfos(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        for (int i = 0; i < getPaymentListCount(); i++) {
+          if (!getPaymentList(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        for (int i = 0; i < getOrderLineActivityInfosCount(); i++) {
+          if (!getOrderLineActivityInfos(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasInvoiceInfo()) {
+          if (!getInvoiceInfo().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mtime.client.retail.contract.dto.OrderProtos.OrderInfo) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 OrderID = 1;
+      private int orderID_ ;
+      /**
+       * <code>required int32 OrderID = 1;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public boolean hasOrderID() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 OrderID = 1;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public int getOrderID() {
+        return orderID_;
+      }
+      /**
+       * <code>required int32 OrderID = 1;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public Builder setOrderID(int value) {
+        bitField0_ |= 0x00000001;
+        orderID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OrderID = 1;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public Builder clearOrderID() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        orderID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 OperatorID = 2;
+      private int operatorID_ ;
+      /**
+       * <code>required int32 OperatorID = 2;</code>
+       *
+       * <pre>
+       * 操作员ID
+       * </pre>
+       */
+      public boolean hasOperatorID() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 OperatorID = 2;</code>
+       *
+       * <pre>
+       * 操作员ID
+       * </pre>
+       */
+      public int getOperatorID() {
+        return operatorID_;
+      }
+      /**
+       * <code>required int32 OperatorID = 2;</code>
+       *
+       * <pre>
+       * 操作员ID
+       * </pre>
+       */
+      public Builder setOperatorID(int value) {
+        bitField0_ |= 0x00000002;
+        operatorID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OperatorID = 2;</code>
+       *
+       * <pre>
+       * 操作员ID
+       * </pre>
+       */
+      public Builder clearOperatorID() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        operatorID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 TerminalID = 3;
+      private int terminalID_ ;
+      /**
+       * <code>required int32 TerminalID = 3;</code>
+       *
+       * <pre>
+       * 终端ID
+       * </pre>
+       */
+      public boolean hasTerminalID() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int32 TerminalID = 3;</code>
+       *
+       * <pre>
+       * 终端ID
+       * </pre>
+       */
+      public int getTerminalID() {
+        return terminalID_;
+      }
+      /**
+       * <code>required int32 TerminalID = 3;</code>
+       *
+       * <pre>
+       * 终端ID
+       * </pre>
+       */
+      public Builder setTerminalID(int value) {
+        bitField0_ |= 0x00000004;
+        terminalID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 TerminalID = 3;</code>
+       *
+       * <pre>
+       * 终端ID
+       * </pre>
+       */
+      public Builder clearTerminalID() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        terminalID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 StoreID = 4;
+      private int storeID_ ;
+      /**
+       * <code>required int32 StoreID = 4;</code>
+       *
+       * <pre>
+       * 店铺ID
+       * </pre>
+       */
+      public boolean hasStoreID() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required int32 StoreID = 4;</code>
+       *
+       * <pre>
+       * 店铺ID
+       * </pre>
+       */
+      public int getStoreID() {
+        return storeID_;
+      }
+      /**
+       * <code>required int32 StoreID = 4;</code>
+       *
+       * <pre>
+       * 店铺ID
+       * </pre>
+       */
+      public Builder setStoreID(int value) {
+        bitField0_ |= 0x00000008;
+        storeID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 StoreID = 4;</code>
+       *
+       * <pre>
+       * 店铺ID
+       * </pre>
+       */
+      public Builder clearStoreID() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        storeID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 WarehouseID = 5;
+      private int warehouseID_ ;
+      /**
+       * <code>required int32 WarehouseID = 5;</code>
+       *
+       * <pre>
+       * 仓库ID
+       * </pre>
+       */
+      public boolean hasWarehouseID() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>required int32 WarehouseID = 5;</code>
+       *
+       * <pre>
+       * 仓库ID
+       * </pre>
+       */
+      public int getWarehouseID() {
+        return warehouseID_;
+      }
+      /**
+       * <code>required int32 WarehouseID = 5;</code>
+       *
+       * <pre>
+       * 仓库ID
+       * </pre>
+       */
+      public Builder setWarehouseID(int value) {
+        bitField0_ |= 0x00000010;
+        warehouseID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 WarehouseID = 5;</code>
+       *
+       * <pre>
+       * 仓库ID
+       * </pre>
+       */
+      public Builder clearWarehouseID() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        warehouseID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 OrderStatus = 6;
+      private int orderStatus_ ;
+      /**
+       * <code>required int32 OrderStatus = 6;</code>
+       *
+       * <pre>
+       * 订单状态，对应GoodsOrderStatus枚举，0-新建，60-已发货
+       * </pre>
+       */
+      public boolean hasOrderStatus() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>required int32 OrderStatus = 6;</code>
+       *
+       * <pre>
+       * 订单状态，对应GoodsOrderStatus枚举，0-新建，60-已发货
+       * </pre>
+       */
+      public int getOrderStatus() {
+        return orderStatus_;
+      }
+      /**
+       * <code>required int32 OrderStatus = 6;</code>
+       *
+       * <pre>
+       * 订单状态，对应GoodsOrderStatus枚举，0-新建，60-已发货
+       * </pre>
+       */
+      public Builder setOrderStatus(int value) {
+        bitField0_ |= 0x00000020;
+        orderStatus_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OrderStatus = 6;</code>
+       *
+       * <pre>
+       * 订单状态，对应GoodsOrderStatus枚举，0-新建，60-已发货
+       * </pre>
+       */
+      public Builder clearOrderStatus() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        orderStatus_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required string OrderCode = 7;
+      private java.lang.Object orderCode_ = "";
+      /**
+       * <code>required string OrderCode = 7;</code>
+       *
+       * <pre>
+       * 订单编号
+       * </pre>
+       */
+      public boolean hasOrderCode() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>required string OrderCode = 7;</code>
+       *
+       * <pre>
+       * 订单编号
+       * </pre>
+       */
+      public java.lang.String getOrderCode() {
+        java.lang.Object ref = orderCode_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          orderCode_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string OrderCode = 7;</code>
+       *
+       * <pre>
+       * 订单编号
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getOrderCodeBytes() {
+        java.lang.Object ref = orderCode_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          orderCode_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string OrderCode = 7;</code>
+       *
+       * <pre>
+       * 订单编号
+       * </pre>
+       */
+      public Builder setOrderCode(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        orderCode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string OrderCode = 7;</code>
+       *
+       * <pre>
+       * 订单编号
+       * </pre>
+       */
+      public Builder clearOrderCode() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        orderCode_ = getDefaultInstance().getOrderCode();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string OrderCode = 7;</code>
+       *
+       * <pre>
+       * 订单编号
+       * </pre>
+       */
+      public Builder setOrderCodeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        orderCode_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string StoreOrderCode = 8;
+      private java.lang.Object storeOrderCode_ = "";
+      /**
+       * <code>required string StoreOrderCode = 8;</code>
+       *
+       * <pre>
+       * 店内订单编号
+       * </pre>
+       */
+      public boolean hasStoreOrderCode() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>required string StoreOrderCode = 8;</code>
+       *
+       * <pre>
+       * 店内订单编号
+       * </pre>
+       */
+      public java.lang.String getStoreOrderCode() {
+        java.lang.Object ref = storeOrderCode_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          storeOrderCode_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string StoreOrderCode = 8;</code>
+       *
+       * <pre>
+       * 店内订单编号
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getStoreOrderCodeBytes() {
+        java.lang.Object ref = storeOrderCode_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          storeOrderCode_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string StoreOrderCode = 8;</code>
+       *
+       * <pre>
+       * 店内订单编号
+       * </pre>
+       */
+      public Builder setStoreOrderCode(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
+        storeOrderCode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string StoreOrderCode = 8;</code>
+       *
+       * <pre>
+       * 店内订单编号
+       * </pre>
+       */
+      public Builder clearStoreOrderCode() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        storeOrderCode_ = getDefaultInstance().getStoreOrderCode();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string StoreOrderCode = 8;</code>
+       *
+       * <pre>
+       * 店内订单编号
+       * </pre>
+       */
+      public Builder setStoreOrderCodeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
+        storeOrderCode_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 PayStatus = 9;
+      private int payStatus_ ;
+      /**
+       * <code>optional int32 PayStatus = 9;</code>
+       *
+       * <pre>
+       * 支付状态，0-未支付，1-已支付
+       * </pre>
+       */
+      public boolean hasPayStatus() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>optional int32 PayStatus = 9;</code>
+       *
+       * <pre>
+       * 支付状态，0-未支付，1-已支付
+       * </pre>
+       */
+      public int getPayStatus() {
+        return payStatus_;
+      }
+      /**
+       * <code>optional int32 PayStatus = 9;</code>
+       *
+       * <pre>
+       * 支付状态，0-未支付，1-已支付
+       * </pre>
+       */
+      public Builder setPayStatus(int value) {
+        bitField0_ |= 0x00000100;
+        payStatus_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 PayStatus = 9;</code>
+       *
+       * <pre>
+       * 支付状态，0-未支付，1-已支付
+       * </pre>
+       */
+      public Builder clearPayStatus() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        payStatus_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int64 PayTime = 10;
+      private long payTime_ ;
+      /**
+       * <code>optional int64 PayTime = 10;</code>
+       *
+       * <pre>
+       * 支付时间
+       * </pre>
+       */
+      public boolean hasPayTime() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      /**
+       * <code>optional int64 PayTime = 10;</code>
+       *
+       * <pre>
+       * 支付时间
+       * </pre>
+       */
+      public long getPayTime() {
+        return payTime_;
+      }
+      /**
+       * <code>optional int64 PayTime = 10;</code>
+       *
+       * <pre>
+       * 支付时间
+       * </pre>
+       */
+      public Builder setPayTime(long value) {
+        bitField0_ |= 0x00000200;
+        payTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 PayTime = 10;</code>
+       *
+       * <pre>
+       * 支付时间
+       * </pre>
+       */
+      public Builder clearPayTime() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        payTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 Quantity = 11;
+      private int quantity_ ;
+      /**
+       * <code>optional int32 Quantity = 11;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public boolean hasQuantity() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      /**
+       * <code>optional int32 Quantity = 11;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public int getQuantity() {
+        return quantity_;
+      }
+      /**
+       * <code>optional int32 Quantity = 11;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public Builder setQuantity(int value) {
+        bitField0_ |= 0x00000400;
+        quantity_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 Quantity = 11;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public Builder clearQuantity() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        quantity_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 Amount = 12;
+      private int amount_ ;
+      /**
+       * <code>optional int32 Amount = 12;</code>
+       *
+       * <pre>
+       * 金额，单位分
+       * </pre>
+       */
+      public boolean hasAmount() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      /**
+       * <code>optional int32 Amount = 12;</code>
+       *
+       * <pre>
+       * 金额，单位分
+       * </pre>
+       */
+      public int getAmount() {
+        return amount_;
+      }
+      /**
+       * <code>optional int32 Amount = 12;</code>
+       *
+       * <pre>
+       * 金额，单位分
+       * </pre>
+       */
+      public Builder setAmount(int value) {
+        bitField0_ |= 0x00000800;
+        amount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 Amount = 12;</code>
+       *
+       * <pre>
+       * 金额，单位分
+       * </pre>
+       */
+      public Builder clearAmount() {
+        bitField0_ = (bitField0_ & ~0x00000800);
+        amount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 ActualAmount = 13;
+      private int actualAmount_ ;
+      /**
+       * <code>optional int32 ActualAmount = 13;</code>
+       *
+       * <pre>
+       * 实际金额，单位分
+       * </pre>
+       */
+      public boolean hasActualAmount() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      /**
+       * <code>optional int32 ActualAmount = 13;</code>
+       *
+       * <pre>
+       * 实际金额，单位分
+       * </pre>
+       */
+      public int getActualAmount() {
+        return actualAmount_;
+      }
+      /**
+       * <code>optional int32 ActualAmount = 13;</code>
+       *
+       * <pre>
+       * 实际金额，单位分
+       * </pre>
+       */
+      public Builder setActualAmount(int value) {
+        bitField0_ |= 0x00001000;
+        actualAmount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 ActualAmount = 13;</code>
+       *
+       * <pre>
+       * 实际金额，单位分
+       * </pre>
+       */
+      public Builder clearActualAmount() {
+        bitField0_ = (bitField0_ & ~0x00001000);
+        actualAmount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int64 CreateTime = 14;
+      private long createTime_ ;
+      /**
+       * <code>optional int64 CreateTime = 14;</code>
+       *
+       * <pre>
+       * 创建时间
+       * </pre>
+       */
+      public boolean hasCreateTime() {
+        return ((bitField0_ & 0x00002000) == 0x00002000);
+      }
+      /**
+       * <code>optional int64 CreateTime = 14;</code>
+       *
+       * <pre>
+       * 创建时间
+       * </pre>
+       */
+      public long getCreateTime() {
+        return createTime_;
+      }
+      /**
+       * <code>optional int64 CreateTime = 14;</code>
+       *
+       * <pre>
+       * 创建时间
+       * </pre>
+       */
+      public Builder setCreateTime(long value) {
+        bitField0_ |= 0x00002000;
+        createTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 CreateTime = 14;</code>
+       *
+       * <pre>
+       * 创建时间
+       * </pre>
+       */
+      public Builder clearCreateTime() {
+        bitField0_ = (bitField0_ & ~0x00002000);
+        createTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // optional string Note = 15;
+      private java.lang.Object note_ = "";
+      /**
+       * <code>optional string Note = 15;</code>
+       *
+       * <pre>
+       * </pre>
+       */
+      public boolean hasNote() {
+        return ((bitField0_ & 0x00004000) == 0x00004000);
+      }
+      /**
+       * <code>optional string Note = 15;</code>
+       *
+       * <pre>
+       * </pre>
+       */
+      public java.lang.String getNote() {
+        java.lang.Object ref = note_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          note_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string Note = 15;</code>
+       *
+       * <pre>
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getNoteBytes() {
+        java.lang.Object ref = note_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          note_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string Note = 15;</code>
+       *
+       * <pre>
+       * </pre>
+       */
+      public Builder setNote(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00004000;
+        note_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Note = 15;</code>
+       *
+       * <pre>
+       * </pre>
+       */
+      public Builder clearNote() {
+        bitField0_ = (bitField0_ & ~0x00004000);
+        note_ = getDefaultInstance().getNote();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Note = 15;</code>
+       *
+       * <pre>
+       * </pre>
+       */
+      public Builder setNoteBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00004000;
+        note_ = value;
+        onChanged();
+        return this;
+      }
+
+      // repeated .OrderLineInfo OrderLineInfos = 16;
+      private java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo> orderLineInfos_ =
+        java.util.Collections.emptyList();
+      private void ensureOrderLineInfosIsMutable() {
+        if (!((bitField0_ & 0x00008000) == 0x00008000)) {
+          orderLineInfos_ = new java.util.ArrayList<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo>(orderLineInfos_);
+          bitField0_ |= 0x00008000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder> orderLineInfosBuilder_;
+
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo> getOrderLineInfosList() {
+        if (orderLineInfosBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(orderLineInfos_);
+        } else {
+          return orderLineInfosBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public int getOrderLineInfosCount() {
+        if (orderLineInfosBuilder_ == null) {
+          return orderLineInfos_.size();
+        } else {
+          return orderLineInfosBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo getOrderLineInfos(int index) {
+        if (orderLineInfosBuilder_ == null) {
+          return orderLineInfos_.get(index);
+        } else {
+          return orderLineInfosBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder setOrderLineInfos(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo value) {
+        if (orderLineInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOrderLineInfosIsMutable();
+          orderLineInfos_.set(index, value);
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder setOrderLineInfos(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder builderForValue) {
+        if (orderLineInfosBuilder_ == null) {
+          ensureOrderLineInfosIsMutable();
+          orderLineInfos_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder addOrderLineInfos(com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo value) {
+        if (orderLineInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOrderLineInfosIsMutable();
+          orderLineInfos_.add(value);
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder addOrderLineInfos(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo value) {
+        if (orderLineInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOrderLineInfosIsMutable();
+          orderLineInfos_.add(index, value);
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder addOrderLineInfos(
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder builderForValue) {
+        if (orderLineInfosBuilder_ == null) {
+          ensureOrderLineInfosIsMutable();
+          orderLineInfos_.add(builderForValue.build());
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder addOrderLineInfos(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder builderForValue) {
+        if (orderLineInfosBuilder_ == null) {
+          ensureOrderLineInfosIsMutable();
+          orderLineInfos_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder addAllOrderLineInfos(
+          java.lang.Iterable<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo> values) {
+        if (orderLineInfosBuilder_ == null) {
+          ensureOrderLineInfosIsMutable();
+          super.addAll(values, orderLineInfos_);
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder clearOrderLineInfos() {
+        if (orderLineInfosBuilder_ == null) {
+          orderLineInfos_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00008000);
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public Builder removeOrderLineInfos(int index) {
+        if (orderLineInfosBuilder_ == null) {
+          ensureOrderLineInfosIsMutable();
+          orderLineInfos_.remove(index);
+          onChanged();
+        } else {
+          orderLineInfosBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder getOrderLineInfosBuilder(
+          int index) {
+        return getOrderLineInfosFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder getOrderLineInfosOrBuilder(
+          int index) {
+        if (orderLineInfosBuilder_ == null) {
+          return orderLineInfos_.get(index);  } else {
+          return orderLineInfosBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder> 
+           getOrderLineInfosOrBuilderList() {
+        if (orderLineInfosBuilder_ != null) {
+          return orderLineInfosBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(orderLineInfos_);
+        }
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder addOrderLineInfosBuilder() {
+        return getOrderLineInfosFieldBuilder().addBuilder(
+            com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder addOrderLineInfosBuilder(
+          int index) {
+        return getOrderLineInfosFieldBuilder().addBuilder(
+            index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .OrderLineInfo OrderLineInfos = 16;</code>
+       *
+       * <pre>
+       *订单明细
+       * </pre>
+       */
+      public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder> 
+           getOrderLineInfosBuilderList() {
+        return getOrderLineInfosFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder> 
+          getOrderLineInfosFieldBuilder() {
+        if (orderLineInfosBuilder_ == null) {
+          orderLineInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder>(
+                  orderLineInfos_,
+                  ((bitField0_ & 0x00008000) == 0x00008000),
+                  getParentForChildren(),
+                  isClean());
+          orderLineInfos_ = null;
+        }
+        return orderLineInfosBuilder_;
+      }
+
+      // repeated .OrderPaymentInfo PaymentList = 17;
+      private java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo> paymentList_ =
+        java.util.Collections.emptyList();
+      private void ensurePaymentListIsMutable() {
+        if (!((bitField0_ & 0x00010000) == 0x00010000)) {
+          paymentList_ = new java.util.ArrayList<com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo>(paymentList_);
+          bitField0_ |= 0x00010000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder> paymentListBuilder_;
+
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo> getPaymentListList() {
+        if (paymentListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(paymentList_);
+        } else {
+          return paymentListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public int getPaymentListCount() {
+        if (paymentListBuilder_ == null) {
+          return paymentList_.size();
+        } else {
+          return paymentListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo getPaymentList(int index) {
+        if (paymentListBuilder_ == null) {
+          return paymentList_.get(index);
+        } else {
+          return paymentListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder setPaymentList(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo value) {
+        if (paymentListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePaymentListIsMutable();
+          paymentList_.set(index, value);
+          onChanged();
+        } else {
+          paymentListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder setPaymentList(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder builderForValue) {
+        if (paymentListBuilder_ == null) {
+          ensurePaymentListIsMutable();
+          paymentList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          paymentListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder addPaymentList(com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo value) {
+        if (paymentListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePaymentListIsMutable();
+          paymentList_.add(value);
+          onChanged();
+        } else {
+          paymentListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder addPaymentList(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo value) {
+        if (paymentListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePaymentListIsMutable();
+          paymentList_.add(index, value);
+          onChanged();
+        } else {
+          paymentListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder addPaymentList(
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder builderForValue) {
+        if (paymentListBuilder_ == null) {
+          ensurePaymentListIsMutable();
+          paymentList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          paymentListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder addPaymentList(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder builderForValue) {
+        if (paymentListBuilder_ == null) {
+          ensurePaymentListIsMutable();
+          paymentList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          paymentListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder addAllPaymentList(
+          java.lang.Iterable<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo> values) {
+        if (paymentListBuilder_ == null) {
+          ensurePaymentListIsMutable();
+          super.addAll(values, paymentList_);
+          onChanged();
+        } else {
+          paymentListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder clearPaymentList() {
+        if (paymentListBuilder_ == null) {
+          paymentList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00010000);
+          onChanged();
+        } else {
+          paymentListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public Builder removePaymentList(int index) {
+        if (paymentListBuilder_ == null) {
+          ensurePaymentListIsMutable();
+          paymentList_.remove(index);
+          onChanged();
+        } else {
+          paymentListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder getPaymentListBuilder(
+          int index) {
+        return getPaymentListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder getPaymentListOrBuilder(
+          int index) {
+        if (paymentListBuilder_ == null) {
+          return paymentList_.get(index);  } else {
+          return paymentListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder> 
+           getPaymentListOrBuilderList() {
+        if (paymentListBuilder_ != null) {
+          return paymentListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(paymentList_);
+        }
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder addPaymentListBuilder() {
+        return getPaymentListFieldBuilder().addBuilder(
+            com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder addPaymentListBuilder(
+          int index) {
+        return getPaymentListFieldBuilder().addBuilder(
+            index, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .OrderPaymentInfo PaymentList = 17;</code>
+       *
+       * <pre>
+       *支付流水
+       * </pre>
+       */
+      public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder> 
+           getPaymentListBuilderList() {
+        return getPaymentListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder> 
+          getPaymentListFieldBuilder() {
+        if (paymentListBuilder_ == null) {
+          paymentListBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder>(
+                  paymentList_,
+                  ((bitField0_ & 0x00010000) == 0x00010000),
+                  getParentForChildren(),
+                  isClean());
+          paymentList_ = null;
+        }
+        return paymentListBuilder_;
+      }
+
+      // optional int32 CinemaID = 19;
+      private int cinemaID_ ;
+      /**
+       * <code>optional int32 CinemaID = 19;</code>
+       *
+       * <pre>
+       *影院ID
+       * </pre>
+       */
+      public boolean hasCinemaID() {
+        return ((bitField0_ & 0x00020000) == 0x00020000);
+      }
+      /**
+       * <code>optional int32 CinemaID = 19;</code>
+       *
+       * <pre>
+       *影院ID
+       * </pre>
+       */
+      public int getCinemaID() {
+        return cinemaID_;
+      }
+      /**
+       * <code>optional int32 CinemaID = 19;</code>
+       *
+       * <pre>
+       *影院ID
+       * </pre>
+       */
+      public Builder setCinemaID(int value) {
+        bitField0_ |= 0x00020000;
+        cinemaID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 CinemaID = 19;</code>
+       *
+       * <pre>
+       *影院ID
+       * </pre>
+       */
+      public Builder clearCinemaID() {
+        bitField0_ = (bitField0_ & ~0x00020000);
+        cinemaID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 DeductAmount = 20;
+      private int deductAmount_ ;
+      /**
+       * <code>optional int32 DeductAmount = 20;</code>
+       *
+       * <pre>
+       *抵扣金额
+       * </pre>
+       */
+      public boolean hasDeductAmount() {
+        return ((bitField0_ & 0x00040000) == 0x00040000);
+      }
+      /**
+       * <code>optional int32 DeductAmount = 20;</code>
+       *
+       * <pre>
+       *抵扣金额
+       * </pre>
+       */
+      public int getDeductAmount() {
+        return deductAmount_;
+      }
+      /**
+       * <code>optional int32 DeductAmount = 20;</code>
+       *
+       * <pre>
+       *抵扣金额
+       * </pre>
+       */
+      public Builder setDeductAmount(int value) {
+        bitField0_ |= 0x00040000;
+        deductAmount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 DeductAmount = 20;</code>
+       *
+       * <pre>
+       *抵扣金额
+       * </pre>
+       */
+      public Builder clearDeductAmount() {
+        bitField0_ = (bitField0_ & ~0x00040000);
+        deductAmount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;
+      private java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo> orderLineActivityInfos_ =
+        java.util.Collections.emptyList();
+      private void ensureOrderLineActivityInfosIsMutable() {
+        if (!((bitField0_ & 0x00080000) == 0x00080000)) {
+          orderLineActivityInfos_ = new java.util.ArrayList<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo>(orderLineActivityInfos_);
+          bitField0_ |= 0x00080000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder> orderLineActivityInfosBuilder_;
+
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo> getOrderLineActivityInfosList() {
+        if (orderLineActivityInfosBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(orderLineActivityInfos_);
+        } else {
+          return orderLineActivityInfosBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public int getOrderLineActivityInfosCount() {
+        if (orderLineActivityInfosBuilder_ == null) {
+          return orderLineActivityInfos_.size();
+        } else {
+          return orderLineActivityInfosBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo getOrderLineActivityInfos(int index) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          return orderLineActivityInfos_.get(index);
+        } else {
+          return orderLineActivityInfosBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder setOrderLineActivityInfos(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo value) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOrderLineActivityInfosIsMutable();
+          orderLineActivityInfos_.set(index, value);
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder setOrderLineActivityInfos(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder builderForValue) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          ensureOrderLineActivityInfosIsMutable();
+          orderLineActivityInfos_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder addOrderLineActivityInfos(com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo value) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOrderLineActivityInfosIsMutable();
+          orderLineActivityInfos_.add(value);
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder addOrderLineActivityInfos(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo value) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOrderLineActivityInfosIsMutable();
+          orderLineActivityInfos_.add(index, value);
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder addOrderLineActivityInfos(
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder builderForValue) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          ensureOrderLineActivityInfosIsMutable();
+          orderLineActivityInfos_.add(builderForValue.build());
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder addOrderLineActivityInfos(
+          int index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder builderForValue) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          ensureOrderLineActivityInfosIsMutable();
+          orderLineActivityInfos_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder addAllOrderLineActivityInfos(
+          java.lang.Iterable<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo> values) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          ensureOrderLineActivityInfosIsMutable();
+          super.addAll(values, orderLineActivityInfos_);
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder clearOrderLineActivityInfos() {
+        if (orderLineActivityInfosBuilder_ == null) {
+          orderLineActivityInfos_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00080000);
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public Builder removeOrderLineActivityInfos(int index) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          ensureOrderLineActivityInfosIsMutable();
+          orderLineActivityInfos_.remove(index);
+          onChanged();
+        } else {
+          orderLineActivityInfosBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder getOrderLineActivityInfosBuilder(
+          int index) {
+        return getOrderLineActivityInfosFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder getOrderLineActivityInfosOrBuilder(
+          int index) {
+        if (orderLineActivityInfosBuilder_ == null) {
+          return orderLineActivityInfos_.get(index);  } else {
+          return orderLineActivityInfosBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public java.util.List<? extends com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder> 
+           getOrderLineActivityInfosOrBuilderList() {
+        if (orderLineActivityInfosBuilder_ != null) {
+          return orderLineActivityInfosBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(orderLineActivityInfos_);
+        }
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder addOrderLineActivityInfosBuilder() {
+        return getOrderLineActivityInfosFieldBuilder().addBuilder(
+            com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder addOrderLineActivityInfosBuilder(
+          int index) {
+        return getOrderLineActivityInfosFieldBuilder().addBuilder(
+            index, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .OrderLineActivityInfo OrderLineActivityInfos = 21;</code>
+       *
+       * <pre>
+       *子订单活动信息
+       * </pre>
+       */
+      public java.util.List<com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder> 
+           getOrderLineActivityInfosBuilderList() {
+        return getOrderLineActivityInfosFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder> 
+          getOrderLineActivityInfosFieldBuilder() {
+        if (orderLineActivityInfosBuilder_ == null) {
+          orderLineActivityInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder>(
+                  orderLineActivityInfos_,
+                  ((bitField0_ & 0x00080000) == 0x00080000),
+                  getParentForChildren(),
+                  isClean());
+          orderLineActivityInfos_ = null;
+        }
+        return orderLineActivityInfosBuilder_;
+      }
+
+      // optional .OrderInvoiceInfo InvoiceInfo = 22;
+      private com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo invoiceInfo_ = com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfoOrBuilder> invoiceInfoBuilder_;
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      public boolean hasInvoiceInfo() {
+        return ((bitField0_ & 0x00100000) == 0x00100000);
+      }
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo getInvoiceInfo() {
+        if (invoiceInfoBuilder_ == null) {
+          return invoiceInfo_;
+        } else {
+          return invoiceInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      public Builder setInvoiceInfo(com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo value) {
+        if (invoiceInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          invoiceInfo_ = value;
+          onChanged();
+        } else {
+          invoiceInfoBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      public Builder setInvoiceInfo(
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.Builder builderForValue) {
+        if (invoiceInfoBuilder_ == null) {
+          invoiceInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          invoiceInfoBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      public Builder mergeInvoiceInfo(com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo value) {
+        if (invoiceInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00100000) == 0x00100000) &&
+              invoiceInfo_ != com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.getDefaultInstance()) {
+            invoiceInfo_ =
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.newBuilder(invoiceInfo_).mergeFrom(value).buildPartial();
+          } else {
+            invoiceInfo_ = value;
+          }
+          onChanged();
+        } else {
+          invoiceInfoBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      public Builder clearInvoiceInfo() {
+        if (invoiceInfoBuilder_ == null) {
+          invoiceInfo_ = com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.getDefaultInstance();
+          onChanged();
+        } else {
+          invoiceInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00100000);
+        return this;
+      }
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.Builder getInvoiceInfoBuilder() {
+        bitField0_ |= 0x00100000;
+        onChanged();
+        return getInvoiceInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfoOrBuilder getInvoiceInfoOrBuilder() {
+        if (invoiceInfoBuilder_ != null) {
+          return invoiceInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return invoiceInfo_;
+        }
+      }
+      /**
+       * <code>optional .OrderInvoiceInfo InvoiceInfo = 22;</code>
+       *
+       * <pre>
+       *发票信息
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfoOrBuilder> 
+          getInvoiceInfoFieldBuilder() {
+        if (invoiceInfoBuilder_ == null) {
+          invoiceInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo, com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.Builder, com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfoOrBuilder>(
+                  invoiceInfo_,
+                  getParentForChildren(),
+                  isClean());
+          invoiceInfo_ = null;
+        }
+        return invoiceInfoBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:OrderInfo)
+    }
+
+    static {
+      defaultInstance = new OrderInfo(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:OrderInfo)
+  }
+
+  public interface OrderLineInfoOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 OrderLineID = 1;
+    /**
+     * <code>required int32 OrderLineID = 1;</code>
+     *
+     * <pre>
+     * 订单行ID
+     * </pre>
+     */
+    boolean hasOrderLineID();
+    /**
+     * <code>required int32 OrderLineID = 1;</code>
+     *
+     * <pre>
+     * 订单行ID
+     * </pre>
+     */
+    int getOrderLineID();
+
+    // required int32 OrderID = 2;
+    /**
+     * <code>required int32 OrderID = 2;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    boolean hasOrderID();
+    /**
+     * <code>required int32 OrderID = 2;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    int getOrderID();
+
+    // required int32 GoodsID = 3;
+    /**
+     * <code>required int32 GoodsID = 3;</code>
+     *
+     * <pre>
+     * 商品ID
+     * </pre>
+     */
+    boolean hasGoodsID();
+    /**
+     * <code>required int32 GoodsID = 3;</code>
+     *
+     * <pre>
+     * 商品ID
+     * </pre>
+     */
+    int getGoodsID();
+
+    // required int32 SkuID = 4;
+    /**
+     * <code>required int32 SkuID = 4;</code>
+     *
+     * <pre>
+     * SKU
+     * </pre>
+     */
+    boolean hasSkuID();
+    /**
+     * <code>required int32 SkuID = 4;</code>
+     *
+     * <pre>
+     * SKU
+     * </pre>
+     */
+    int getSkuID();
+
+    // required string BatchCode = 5;
+    /**
+     * <code>required string BatchCode = 5;</code>
+     *
+     * <pre>
+     * 批次编号
+     * </pre>
+     */
+    boolean hasBatchCode();
+    /**
+     * <code>required string BatchCode = 5;</code>
+     *
+     * <pre>
+     * 批次编号
+     * </pre>
+     */
+    java.lang.String getBatchCode();
+    /**
+     * <code>required string BatchCode = 5;</code>
+     *
+     * <pre>
+     * 批次编号
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getBatchCodeBytes();
+
+    // required int32 Price = 6;
+    /**
+     * <code>required int32 Price = 6;</code>
+     *
+     * <pre>
+     * 价格，单位分
+     * </pre>
+     */
+    boolean hasPrice();
+    /**
+     * <code>required int32 Price = 6;</code>
+     *
+     * <pre>
+     * 价格，单位分
+     * </pre>
+     */
+    int getPrice();
+
+    // required int32 Quantity = 7;
+    /**
+     * <code>required int32 Quantity = 7;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    boolean hasQuantity();
+    /**
+     * <code>required int32 Quantity = 7;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    int getQuantity();
+
+    // optional string Description = 8;
+    /**
+     * <code>optional string Description = 8;</code>
+     *
+     * <pre>
+     * 描述
+     * </pre>
+     */
+    boolean hasDescription();
+    /**
+     * <code>optional string Description = 8;</code>
+     *
+     * <pre>
+     * 描述
+     * </pre>
+     */
+    java.lang.String getDescription();
+    /**
+     * <code>optional string Description = 8;</code>
+     *
+     * <pre>
+     * 描述
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getDescriptionBytes();
+
+    // optional int32 TxnPrice = 9;
+    /**
+     * <code>optional int32 TxnPrice = 9;</code>
+     *
+     * <pre>
+     *成交价
+     * </pre>
+     */
+    boolean hasTxnPrice();
+    /**
+     * <code>optional int32 TxnPrice = 9;</code>
+     *
+     * <pre>
+     *成交价
+     * </pre>
+     */
+    int getTxnPrice();
+  }
+  /**
+   * Protobuf type {@code OrderLineInfo}
+   *
+   * <pre>
+   *零售订单明细
+   * </pre>
+   */
+  public static final class OrderLineInfo extends
+      com.google.protobuf.GeneratedMessage
+      implements OrderLineInfoOrBuilder {
+    // Use OrderLineInfo.newBuilder() to construct.
+    private OrderLineInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private OrderLineInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final OrderLineInfo defaultInstance;
+    public static OrderLineInfo getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public OrderLineInfo getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private OrderLineInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              orderLineID_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              orderID_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              goodsID_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              skuID_ = input.readInt32();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              batchCode_ = input.readBytes();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              price_ = input.readInt32();
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              quantity_ = input.readInt32();
+              break;
+            }
+            case 66: {
+              bitField0_ |= 0x00000080;
+              description_ = input.readBytes();
+              break;
+            }
+            case 72: {
+              bitField0_ |= 0x00000100;
+              txnPrice_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<OrderLineInfo> PARSER =
+        new com.google.protobuf.AbstractParser<OrderLineInfo>() {
+      public OrderLineInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new OrderLineInfo(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<OrderLineInfo> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 OrderLineID = 1;
+    public static final int ORDERLINEID_FIELD_NUMBER = 1;
+    private int orderLineID_;
+    /**
+     * <code>required int32 OrderLineID = 1;</code>
+     *
+     * <pre>
+     * 订单行ID
+     * </pre>
+     */
+    public boolean hasOrderLineID() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 OrderLineID = 1;</code>
+     *
+     * <pre>
+     * 订单行ID
+     * </pre>
+     */
+    public int getOrderLineID() {
+      return orderLineID_;
+    }
+
+    // required int32 OrderID = 2;
+    public static final int ORDERID_FIELD_NUMBER = 2;
+    private int orderID_;
+    /**
+     * <code>required int32 OrderID = 2;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    public boolean hasOrderID() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 OrderID = 2;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    public int getOrderID() {
+      return orderID_;
+    }
+
+    // required int32 GoodsID = 3;
+    public static final int GOODSID_FIELD_NUMBER = 3;
+    private int goodsID_;
+    /**
+     * <code>required int32 GoodsID = 3;</code>
+     *
+     * <pre>
+     * 商品ID
+     * </pre>
+     */
+    public boolean hasGoodsID() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required int32 GoodsID = 3;</code>
+     *
+     * <pre>
+     * 商品ID
+     * </pre>
+     */
+    public int getGoodsID() {
+      return goodsID_;
+    }
+
+    // required int32 SkuID = 4;
+    public static final int SKUID_FIELD_NUMBER = 4;
+    private int skuID_;
+    /**
+     * <code>required int32 SkuID = 4;</code>
+     *
+     * <pre>
+     * SKU
+     * </pre>
+     */
+    public boolean hasSkuID() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required int32 SkuID = 4;</code>
+     *
+     * <pre>
+     * SKU
+     * </pre>
+     */
+    public int getSkuID() {
+      return skuID_;
+    }
+
+    // required string BatchCode = 5;
+    public static final int BATCHCODE_FIELD_NUMBER = 5;
+    private java.lang.Object batchCode_;
+    /**
+     * <code>required string BatchCode = 5;</code>
+     *
+     * <pre>
+     * 批次编号
+     * </pre>
+     */
+    public boolean hasBatchCode() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>required string BatchCode = 5;</code>
+     *
+     * <pre>
+     * 批次编号
+     * </pre>
+     */
+    public java.lang.String getBatchCode() {
+      java.lang.Object ref = batchCode_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          batchCode_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string BatchCode = 5;</code>
+     *
+     * <pre>
+     * 批次编号
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getBatchCodeBytes() {
+      java.lang.Object ref = batchCode_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        batchCode_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required int32 Price = 6;
+    public static final int PRICE_FIELD_NUMBER = 6;
+    private int price_;
+    /**
+     * <code>required int32 Price = 6;</code>
+     *
+     * <pre>
+     * 价格，单位分
+     * </pre>
+     */
+    public boolean hasPrice() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>required int32 Price = 6;</code>
+     *
+     * <pre>
+     * 价格，单位分
+     * </pre>
+     */
+    public int getPrice() {
+      return price_;
+    }
+
+    // required int32 Quantity = 7;
+    public static final int QUANTITY_FIELD_NUMBER = 7;
+    private int quantity_;
+    /**
+     * <code>required int32 Quantity = 7;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    public boolean hasQuantity() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>required int32 Quantity = 7;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    public int getQuantity() {
+      return quantity_;
+    }
+
+    // optional string Description = 8;
+    public static final int DESCRIPTION_FIELD_NUMBER = 8;
+    private java.lang.Object description_;
+    /**
+     * <code>optional string Description = 8;</code>
+     *
+     * <pre>
+     * 描述
+     * </pre>
+     */
+    public boolean hasDescription() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>optional string Description = 8;</code>
+     *
+     * <pre>
+     * 描述
+     * </pre>
+     */
+    public java.lang.String getDescription() {
+      java.lang.Object ref = description_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          description_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string Description = 8;</code>
+     *
+     * <pre>
+     * 描述
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getDescriptionBytes() {
+      java.lang.Object ref = description_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        description_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int32 TxnPrice = 9;
+    public static final int TXNPRICE_FIELD_NUMBER = 9;
+    private int txnPrice_;
+    /**
+     * <code>optional int32 TxnPrice = 9;</code>
+     *
+     * <pre>
+     *成交价
+     * </pre>
+     */
+    public boolean hasTxnPrice() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>optional int32 TxnPrice = 9;</code>
+     *
+     * <pre>
+     *成交价
+     * </pre>
+     */
+    public int getTxnPrice() {
+      return txnPrice_;
+    }
+
+    private void initFields() {
+      orderLineID_ = 0;
+      orderID_ = 0;
+      goodsID_ = 0;
+      skuID_ = 0;
+      batchCode_ = "";
+      price_ = 0;
+      quantity_ = 0;
+      description_ = "";
+      txnPrice_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasOrderLineID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOrderID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasGoodsID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasSkuID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasBatchCode()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPrice()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasQuantity()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, orderLineID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, orderID_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, goodsID_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, skuID_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeBytes(5, getBatchCodeBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt32(6, price_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(7, quantity_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeBytes(8, getDescriptionBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeInt32(9, txnPrice_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, orderLineID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, orderID_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, goodsID_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, skuID_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getBatchCodeBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, price_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, quantity_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(8, getDescriptionBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, txnPrice_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code OrderLineInfo}
+     *
+     * <pre>
+     *零售订单明细
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.Builder.class);
+      }
+
+      // Construct using com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        orderLineID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        orderID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        goodsID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        skuID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        batchCode_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
+        price_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        quantity_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000040);
+        description_ = "";
+        bitField0_ = (bitField0_ & ~0x00000080);
+        txnPrice_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000100);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineInfo_descriptor;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo getDefaultInstanceForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.getDefaultInstance();
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo build() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo buildPartial() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo result = new com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.orderLineID_ = orderLineID_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.orderID_ = orderID_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.goodsID_ = goodsID_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.skuID_ = skuID_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.batchCode_ = batchCode_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.price_ = price_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.quantity_ = quantity_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.description_ = description_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.txnPrice_ = txnPrice_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo) {
+          return mergeFrom((com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo other) {
+        if (other == com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo.getDefaultInstance()) return this;
+        if (other.hasOrderLineID()) {
+          setOrderLineID(other.getOrderLineID());
+        }
+        if (other.hasOrderID()) {
+          setOrderID(other.getOrderID());
+        }
+        if (other.hasGoodsID()) {
+          setGoodsID(other.getGoodsID());
+        }
+        if (other.hasSkuID()) {
+          setSkuID(other.getSkuID());
+        }
+        if (other.hasBatchCode()) {
+          bitField0_ |= 0x00000010;
+          batchCode_ = other.batchCode_;
+          onChanged();
+        }
+        if (other.hasPrice()) {
+          setPrice(other.getPrice());
+        }
+        if (other.hasQuantity()) {
+          setQuantity(other.getQuantity());
+        }
+        if (other.hasDescription()) {
+          bitField0_ |= 0x00000080;
+          description_ = other.description_;
+          onChanged();
+        }
+        if (other.hasTxnPrice()) {
+          setTxnPrice(other.getTxnPrice());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasOrderLineID()) {
+          
+          return false;
+        }
+        if (!hasOrderID()) {
+          
+          return false;
+        }
+        if (!hasGoodsID()) {
+          
+          return false;
+        }
+        if (!hasSkuID()) {
+          
+          return false;
+        }
+        if (!hasBatchCode()) {
+          
+          return false;
+        }
+        if (!hasPrice()) {
+          
+          return false;
+        }
+        if (!hasQuantity()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mtime.client.retail.contract.dto.OrderProtos.OrderLineInfo) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 OrderLineID = 1;
+      private int orderLineID_ ;
+      /**
+       * <code>required int32 OrderLineID = 1;</code>
+       *
+       * <pre>
+       * 订单行ID
+       * </pre>
+       */
+      public boolean hasOrderLineID() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 OrderLineID = 1;</code>
+       *
+       * <pre>
+       * 订单行ID
+       * </pre>
+       */
+      public int getOrderLineID() {
+        return orderLineID_;
+      }
+      /**
+       * <code>required int32 OrderLineID = 1;</code>
+       *
+       * <pre>
+       * 订单行ID
+       * </pre>
+       */
+      public Builder setOrderLineID(int value) {
+        bitField0_ |= 0x00000001;
+        orderLineID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OrderLineID = 1;</code>
+       *
+       * <pre>
+       * 订单行ID
+       * </pre>
+       */
+      public Builder clearOrderLineID() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        orderLineID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 OrderID = 2;
+      private int orderID_ ;
+      /**
+       * <code>required int32 OrderID = 2;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public boolean hasOrderID() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 OrderID = 2;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public int getOrderID() {
+        return orderID_;
+      }
+      /**
+       * <code>required int32 OrderID = 2;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public Builder setOrderID(int value) {
+        bitField0_ |= 0x00000002;
+        orderID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OrderID = 2;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public Builder clearOrderID() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        orderID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 GoodsID = 3;
+      private int goodsID_ ;
+      /**
+       * <code>required int32 GoodsID = 3;</code>
+       *
+       * <pre>
+       * 商品ID
+       * </pre>
+       */
+      public boolean hasGoodsID() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int32 GoodsID = 3;</code>
+       *
+       * <pre>
+       * 商品ID
+       * </pre>
+       */
+      public int getGoodsID() {
+        return goodsID_;
+      }
+      /**
+       * <code>required int32 GoodsID = 3;</code>
+       *
+       * <pre>
+       * 商品ID
+       * </pre>
+       */
+      public Builder setGoodsID(int value) {
+        bitField0_ |= 0x00000004;
+        goodsID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 GoodsID = 3;</code>
+       *
+       * <pre>
+       * 商品ID
+       * </pre>
+       */
+      public Builder clearGoodsID() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        goodsID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 SkuID = 4;
+      private int skuID_ ;
+      /**
+       * <code>required int32 SkuID = 4;</code>
+       *
+       * <pre>
+       * SKU
+       * </pre>
+       */
+      public boolean hasSkuID() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required int32 SkuID = 4;</code>
+       *
+       * <pre>
+       * SKU
+       * </pre>
+       */
+      public int getSkuID() {
+        return skuID_;
+      }
+      /**
+       * <code>required int32 SkuID = 4;</code>
+       *
+       * <pre>
+       * SKU
+       * </pre>
+       */
+      public Builder setSkuID(int value) {
+        bitField0_ |= 0x00000008;
+        skuID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 SkuID = 4;</code>
+       *
+       * <pre>
+       * SKU
+       * </pre>
+       */
+      public Builder clearSkuID() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        skuID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required string BatchCode = 5;
+      private java.lang.Object batchCode_ = "";
+      /**
+       * <code>required string BatchCode = 5;</code>
+       *
+       * <pre>
+       * 批次编号
+       * </pre>
+       */
+      public boolean hasBatchCode() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>required string BatchCode = 5;</code>
+       *
+       * <pre>
+       * 批次编号
+       * </pre>
+       */
+      public java.lang.String getBatchCode() {
+        java.lang.Object ref = batchCode_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          batchCode_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string BatchCode = 5;</code>
+       *
+       * <pre>
+       * 批次编号
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getBatchCodeBytes() {
+        java.lang.Object ref = batchCode_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          batchCode_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string BatchCode = 5;</code>
+       *
+       * <pre>
+       * 批次编号
+       * </pre>
+       */
+      public Builder setBatchCode(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        batchCode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string BatchCode = 5;</code>
+       *
+       * <pre>
+       * 批次编号
+       * </pre>
+       */
+      public Builder clearBatchCode() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        batchCode_ = getDefaultInstance().getBatchCode();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string BatchCode = 5;</code>
+       *
+       * <pre>
+       * 批次编号
+       * </pre>
+       */
+      public Builder setBatchCodeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        batchCode_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required int32 Price = 6;
+      private int price_ ;
+      /**
+       * <code>required int32 Price = 6;</code>
+       *
+       * <pre>
+       * 价格，单位分
+       * </pre>
+       */
+      public boolean hasPrice() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>required int32 Price = 6;</code>
+       *
+       * <pre>
+       * 价格，单位分
+       * </pre>
+       */
+      public int getPrice() {
+        return price_;
+      }
+      /**
+       * <code>required int32 Price = 6;</code>
+       *
+       * <pre>
+       * 价格，单位分
+       * </pre>
+       */
+      public Builder setPrice(int value) {
+        bitField0_ |= 0x00000020;
+        price_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 Price = 6;</code>
+       *
+       * <pre>
+       * 价格，单位分
+       * </pre>
+       */
+      public Builder clearPrice() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        price_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 Quantity = 7;
+      private int quantity_ ;
+      /**
+       * <code>required int32 Quantity = 7;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public boolean hasQuantity() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>required int32 Quantity = 7;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public int getQuantity() {
+        return quantity_;
+      }
+      /**
+       * <code>required int32 Quantity = 7;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public Builder setQuantity(int value) {
+        bitField0_ |= 0x00000040;
+        quantity_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 Quantity = 7;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public Builder clearQuantity() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        quantity_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional string Description = 8;
+      private java.lang.Object description_ = "";
+      /**
+       * <code>optional string Description = 8;</code>
+       *
+       * <pre>
+       * 描述
+       * </pre>
+       */
+      public boolean hasDescription() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>optional string Description = 8;</code>
+       *
+       * <pre>
+       * 描述
+       * </pre>
+       */
+      public java.lang.String getDescription() {
+        java.lang.Object ref = description_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          description_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string Description = 8;</code>
+       *
+       * <pre>
+       * 描述
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getDescriptionBytes() {
+        java.lang.Object ref = description_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          description_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string Description = 8;</code>
+       *
+       * <pre>
+       * 描述
+       * </pre>
+       */
+      public Builder setDescription(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
+        description_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Description = 8;</code>
+       *
+       * <pre>
+       * 描述
+       * </pre>
+       */
+      public Builder clearDescription() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        description_ = getDefaultInstance().getDescription();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Description = 8;</code>
+       *
+       * <pre>
+       * 描述
+       * </pre>
+       */
+      public Builder setDescriptionBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
+        description_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 TxnPrice = 9;
+      private int txnPrice_ ;
+      /**
+       * <code>optional int32 TxnPrice = 9;</code>
+       *
+       * <pre>
+       *成交价
+       * </pre>
+       */
+      public boolean hasTxnPrice() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>optional int32 TxnPrice = 9;</code>
+       *
+       * <pre>
+       *成交价
+       * </pre>
+       */
+      public int getTxnPrice() {
+        return txnPrice_;
+      }
+      /**
+       * <code>optional int32 TxnPrice = 9;</code>
+       *
+       * <pre>
+       *成交价
+       * </pre>
+       */
+      public Builder setTxnPrice(int value) {
+        bitField0_ |= 0x00000100;
+        txnPrice_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 TxnPrice = 9;</code>
+       *
+       * <pre>
+       *成交价
+       * </pre>
+       */
+      public Builder clearTxnPrice() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        txnPrice_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:OrderLineInfo)
+    }
+
+    static {
+      defaultInstance = new OrderLineInfo(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:OrderLineInfo)
+  }
+
+  public interface OrderPaymentInfoOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // optional int32 OrderPaymentID = 1;
+    /**
+     * <code>optional int32 OrderPaymentID = 1;</code>
+     *
+     * <pre>
+     * 订单支付ID
+     * </pre>
+     */
+    boolean hasOrderPaymentID();
+    /**
+     * <code>optional int32 OrderPaymentID = 1;</code>
+     *
+     * <pre>
+     * 订单支付ID
+     * </pre>
+     */
+    int getOrderPaymentID();
+
+    // required int32 OrderID = 2;
+    /**
+     * <code>required int32 OrderID = 2;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    boolean hasOrderID();
+    /**
+     * <code>required int32 OrderID = 2;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    int getOrderID();
+
+    // required int32 PaymentType = 3;
+    /**
+     * <code>required int32 PaymentType = 3;</code>
+     *
+     * <pre>
+     * 支付方式
+     * </pre>
+     */
+    boolean hasPaymentType();
+    /**
+     * <code>required int32 PaymentType = 3;</code>
+     *
+     * <pre>
+     * 支付方式
+     * </pre>
+     */
+    int getPaymentType();
+
+    // required int32 Amount = 4;
+    /**
+     * <code>required int32 Amount = 4;</code>
+     *
+     * <pre>
+     * 金额，单位分
+     * </pre>
+     */
+    boolean hasAmount();
+    /**
+     * <code>required int32 Amount = 4;</code>
+     *
+     * <pre>
+     * 金额，单位分
+     * </pre>
+     */
+    int getAmount();
+
+    // required int32 ActualAmount = 5;
+    /**
+     * <code>required int32 ActualAmount = 5;</code>
+     *
+     * <pre>
+     * 实际金额，单位分
+     * </pre>
+     */
+    boolean hasActualAmount();
+    /**
+     * <code>required int32 ActualAmount = 5;</code>
+     *
+     * <pre>
+     * 实际金额，单位分
+     * </pre>
+     */
+    int getActualAmount();
+
+    // required int32 OddAmount = 6;
+    /**
+     * <code>required int32 OddAmount = 6;</code>
+     *
+     * <pre>
+     * 找零金额，单位分
+     * </pre>
+     */
+    boolean hasOddAmount();
+    /**
+     * <code>required int32 OddAmount = 6;</code>
+     *
+     * <pre>
+     * 找零金额，单位分
+     * </pre>
+     */
+    int getOddAmount();
+
+    // optional string VoucherCode = 7;
+    /**
+     * <code>optional string VoucherCode = 7;</code>
+     *
+     * <pre>
+     * 凭证号，POS机小票上凭证号
+     * </pre>
+     */
+    boolean hasVoucherCode();
+    /**
+     * <code>optional string VoucherCode = 7;</code>
+     *
+     * <pre>
+     * 凭证号，POS机小票上凭证号
+     * </pre>
+     */
+    java.lang.String getVoucherCode();
+    /**
+     * <code>optional string VoucherCode = 7;</code>
+     *
+     * <pre>
+     * 凭证号，POS机小票上凭证号
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getVoucherCodeBytes();
+
+    // optional int64 CreateTime = 8;
+    /**
+     * <code>optional int64 CreateTime = 8;</code>
+     *
+     * <pre>
+     * 创建时间
+     * </pre>
+     */
+    boolean hasCreateTime();
+    /**
+     * <code>optional int64 CreateTime = 8;</code>
+     *
+     * <pre>
+     * 创建时间
+     * </pre>
+     */
+    long getCreateTime();
+
+    // optional int32 PosID = 9;
+    /**
+     * <code>optional int32 PosID = 9;</code>
+     *
+     * <pre>
+     * 收银机ID
+     * </pre>
+     */
+    boolean hasPosID();
+    /**
+     * <code>optional int32 PosID = 9;</code>
+     *
+     * <pre>
+     * 收银机ID
+     * </pre>
+     */
+    int getPosID();
+  }
+  /**
+   * Protobuf type {@code OrderPaymentInfo}
+   *
+   * <pre>
+   *订单支付流水
+   * </pre>
+   */
+  public static final class OrderPaymentInfo extends
+      com.google.protobuf.GeneratedMessage
+      implements OrderPaymentInfoOrBuilder {
+    // Use OrderPaymentInfo.newBuilder() to construct.
+    private OrderPaymentInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private OrderPaymentInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final OrderPaymentInfo defaultInstance;
+    public static OrderPaymentInfo getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public OrderPaymentInfo getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private OrderPaymentInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              orderPaymentID_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              orderID_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              paymentType_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              amount_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              actualAmount_ = input.readInt32();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              oddAmount_ = input.readInt32();
+              break;
+            }
+            case 58: {
+              bitField0_ |= 0x00000040;
+              voucherCode_ = input.readBytes();
+              break;
+            }
+            case 64: {
+              bitField0_ |= 0x00000080;
+              createTime_ = input.readInt64();
+              break;
+            }
+            case 72: {
+              bitField0_ |= 0x00000100;
+              posID_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderPaymentInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderPaymentInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<OrderPaymentInfo> PARSER =
+        new com.google.protobuf.AbstractParser<OrderPaymentInfo>() {
+      public OrderPaymentInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new OrderPaymentInfo(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<OrderPaymentInfo> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional int32 OrderPaymentID = 1;
+    public static final int ORDERPAYMENTID_FIELD_NUMBER = 1;
+    private int orderPaymentID_;
+    /**
+     * <code>optional int32 OrderPaymentID = 1;</code>
+     *
+     * <pre>
+     * 订单支付ID
+     * </pre>
+     */
+    public boolean hasOrderPaymentID() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional int32 OrderPaymentID = 1;</code>
+     *
+     * <pre>
+     * 订单支付ID
+     * </pre>
+     */
+    public int getOrderPaymentID() {
+      return orderPaymentID_;
+    }
+
+    // required int32 OrderID = 2;
+    public static final int ORDERID_FIELD_NUMBER = 2;
+    private int orderID_;
+    /**
+     * <code>required int32 OrderID = 2;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    public boolean hasOrderID() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 OrderID = 2;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    public int getOrderID() {
+      return orderID_;
+    }
+
+    // required int32 PaymentType = 3;
+    public static final int PAYMENTTYPE_FIELD_NUMBER = 3;
+    private int paymentType_;
+    /**
+     * <code>required int32 PaymentType = 3;</code>
+     *
+     * <pre>
+     * 支付方式
+     * </pre>
+     */
+    public boolean hasPaymentType() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required int32 PaymentType = 3;</code>
+     *
+     * <pre>
+     * 支付方式
+     * </pre>
+     */
+    public int getPaymentType() {
+      return paymentType_;
+    }
+
+    // required int32 Amount = 4;
+    public static final int AMOUNT_FIELD_NUMBER = 4;
+    private int amount_;
+    /**
+     * <code>required int32 Amount = 4;</code>
+     *
+     * <pre>
+     * 金额，单位分
+     * </pre>
+     */
+    public boolean hasAmount() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required int32 Amount = 4;</code>
+     *
+     * <pre>
+     * 金额，单位分
+     * </pre>
+     */
+    public int getAmount() {
+      return amount_;
+    }
+
+    // required int32 ActualAmount = 5;
+    public static final int ACTUALAMOUNT_FIELD_NUMBER = 5;
+    private int actualAmount_;
+    /**
+     * <code>required int32 ActualAmount = 5;</code>
+     *
+     * <pre>
+     * 实际金额，单位分
+     * </pre>
+     */
+    public boolean hasActualAmount() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>required int32 ActualAmount = 5;</code>
+     *
+     * <pre>
+     * 实际金额，单位分
+     * </pre>
+     */
+    public int getActualAmount() {
+      return actualAmount_;
+    }
+
+    // required int32 OddAmount = 6;
+    public static final int ODDAMOUNT_FIELD_NUMBER = 6;
+    private int oddAmount_;
+    /**
+     * <code>required int32 OddAmount = 6;</code>
+     *
+     * <pre>
+     * 找零金额，单位分
+     * </pre>
+     */
+    public boolean hasOddAmount() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>required int32 OddAmount = 6;</code>
+     *
+     * <pre>
+     * 找零金额，单位分
+     * </pre>
+     */
+    public int getOddAmount() {
+      return oddAmount_;
+    }
+
+    // optional string VoucherCode = 7;
+    public static final int VOUCHERCODE_FIELD_NUMBER = 7;
+    private java.lang.Object voucherCode_;
+    /**
+     * <code>optional string VoucherCode = 7;</code>
+     *
+     * <pre>
+     * 凭证号，POS机小票上凭证号
+     * </pre>
+     */
+    public boolean hasVoucherCode() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>optional string VoucherCode = 7;</code>
+     *
+     * <pre>
+     * 凭证号，POS机小票上凭证号
+     * </pre>
+     */
+    public java.lang.String getVoucherCode() {
+      java.lang.Object ref = voucherCode_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          voucherCode_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string VoucherCode = 7;</code>
+     *
+     * <pre>
+     * 凭证号，POS机小票上凭证号
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getVoucherCodeBytes() {
+      java.lang.Object ref = voucherCode_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        voucherCode_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int64 CreateTime = 8;
+    public static final int CREATETIME_FIELD_NUMBER = 8;
+    private long createTime_;
+    /**
+     * <code>optional int64 CreateTime = 8;</code>
+     *
+     * <pre>
+     * 创建时间
+     * </pre>
+     */
+    public boolean hasCreateTime() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>optional int64 CreateTime = 8;</code>
+     *
+     * <pre>
+     * 创建时间
+     * </pre>
+     */
+    public long getCreateTime() {
+      return createTime_;
+    }
+
+    // optional int32 PosID = 9;
+    public static final int POSID_FIELD_NUMBER = 9;
+    private int posID_;
+    /**
+     * <code>optional int32 PosID = 9;</code>
+     *
+     * <pre>
+     * 收银机ID
+     * </pre>
+     */
+    public boolean hasPosID() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>optional int32 PosID = 9;</code>
+     *
+     * <pre>
+     * 收银机ID
+     * </pre>
+     */
+    public int getPosID() {
+      return posID_;
+    }
+
+    private void initFields() {
+      orderPaymentID_ = 0;
+      orderID_ = 0;
+      paymentType_ = 0;
+      amount_ = 0;
+      actualAmount_ = 0;
+      oddAmount_ = 0;
+      voucherCode_ = "";
+      createTime_ = 0L;
+      posID_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasOrderID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPaymentType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasAmount()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasActualAmount()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOddAmount()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, orderPaymentID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, orderID_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, paymentType_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, amount_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, actualAmount_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt32(6, oddAmount_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeBytes(7, getVoucherCodeBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeInt64(8, createTime_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeInt32(9, posID_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, orderPaymentID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, orderID_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, paymentType_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, amount_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, actualAmount_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, oddAmount_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(7, getVoucherCodeBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(8, createTime_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, posID_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code OrderPaymentInfo}
+     *
+     * <pre>
+     *订单支付流水
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderPaymentInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderPaymentInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.Builder.class);
+      }
+
+      // Construct using com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        orderPaymentID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        orderID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        paymentType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        amount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        actualAmount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        oddAmount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        voucherCode_ = "";
+        bitField0_ = (bitField0_ & ~0x00000040);
+        createTime_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000080);
+        posID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000100);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderPaymentInfo_descriptor;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo getDefaultInstanceForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.getDefaultInstance();
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo build() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo buildPartial() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo result = new com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.orderPaymentID_ = orderPaymentID_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.orderID_ = orderID_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.paymentType_ = paymentType_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.amount_ = amount_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.actualAmount_ = actualAmount_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.oddAmount_ = oddAmount_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.voucherCode_ = voucherCode_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.createTime_ = createTime_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.posID_ = posID_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo) {
+          return mergeFrom((com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo other) {
+        if (other == com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo.getDefaultInstance()) return this;
+        if (other.hasOrderPaymentID()) {
+          setOrderPaymentID(other.getOrderPaymentID());
+        }
+        if (other.hasOrderID()) {
+          setOrderID(other.getOrderID());
+        }
+        if (other.hasPaymentType()) {
+          setPaymentType(other.getPaymentType());
+        }
+        if (other.hasAmount()) {
+          setAmount(other.getAmount());
+        }
+        if (other.hasActualAmount()) {
+          setActualAmount(other.getActualAmount());
+        }
+        if (other.hasOddAmount()) {
+          setOddAmount(other.getOddAmount());
+        }
+        if (other.hasVoucherCode()) {
+          bitField0_ |= 0x00000040;
+          voucherCode_ = other.voucherCode_;
+          onChanged();
+        }
+        if (other.hasCreateTime()) {
+          setCreateTime(other.getCreateTime());
+        }
+        if (other.hasPosID()) {
+          setPosID(other.getPosID());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasOrderID()) {
+          
+          return false;
+        }
+        if (!hasPaymentType()) {
+          
+          return false;
+        }
+        if (!hasAmount()) {
+          
+          return false;
+        }
+        if (!hasActualAmount()) {
+          
+          return false;
+        }
+        if (!hasOddAmount()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mtime.client.retail.contract.dto.OrderProtos.OrderPaymentInfo) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // optional int32 OrderPaymentID = 1;
+      private int orderPaymentID_ ;
+      /**
+       * <code>optional int32 OrderPaymentID = 1;</code>
+       *
+       * <pre>
+       * 订单支付ID
+       * </pre>
+       */
+      public boolean hasOrderPaymentID() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional int32 OrderPaymentID = 1;</code>
+       *
+       * <pre>
+       * 订单支付ID
+       * </pre>
+       */
+      public int getOrderPaymentID() {
+        return orderPaymentID_;
+      }
+      /**
+       * <code>optional int32 OrderPaymentID = 1;</code>
+       *
+       * <pre>
+       * 订单支付ID
+       * </pre>
+       */
+      public Builder setOrderPaymentID(int value) {
+        bitField0_ |= 0x00000001;
+        orderPaymentID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 OrderPaymentID = 1;</code>
+       *
+       * <pre>
+       * 订单支付ID
+       * </pre>
+       */
+      public Builder clearOrderPaymentID() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        orderPaymentID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 OrderID = 2;
+      private int orderID_ ;
+      /**
+       * <code>required int32 OrderID = 2;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public boolean hasOrderID() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 OrderID = 2;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public int getOrderID() {
+        return orderID_;
+      }
+      /**
+       * <code>required int32 OrderID = 2;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public Builder setOrderID(int value) {
+        bitField0_ |= 0x00000002;
+        orderID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OrderID = 2;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public Builder clearOrderID() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        orderID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 PaymentType = 3;
+      private int paymentType_ ;
+      /**
+       * <code>required int32 PaymentType = 3;</code>
+       *
+       * <pre>
+       * 支付方式
+       * </pre>
+       */
+      public boolean hasPaymentType() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int32 PaymentType = 3;</code>
+       *
+       * <pre>
+       * 支付方式
+       * </pre>
+       */
+      public int getPaymentType() {
+        return paymentType_;
+      }
+      /**
+       * <code>required int32 PaymentType = 3;</code>
+       *
+       * <pre>
+       * 支付方式
+       * </pre>
+       */
+      public Builder setPaymentType(int value) {
+        bitField0_ |= 0x00000004;
+        paymentType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 PaymentType = 3;</code>
+       *
+       * <pre>
+       * 支付方式
+       * </pre>
+       */
+      public Builder clearPaymentType() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        paymentType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 Amount = 4;
+      private int amount_ ;
+      /**
+       * <code>required int32 Amount = 4;</code>
+       *
+       * <pre>
+       * 金额，单位分
+       * </pre>
+       */
+      public boolean hasAmount() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required int32 Amount = 4;</code>
+       *
+       * <pre>
+       * 金额，单位分
+       * </pre>
+       */
+      public int getAmount() {
+        return amount_;
+      }
+      /**
+       * <code>required int32 Amount = 4;</code>
+       *
+       * <pre>
+       * 金额，单位分
+       * </pre>
+       */
+      public Builder setAmount(int value) {
+        bitField0_ |= 0x00000008;
+        amount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 Amount = 4;</code>
+       *
+       * <pre>
+       * 金额，单位分
+       * </pre>
+       */
+      public Builder clearAmount() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        amount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 ActualAmount = 5;
+      private int actualAmount_ ;
+      /**
+       * <code>required int32 ActualAmount = 5;</code>
+       *
+       * <pre>
+       * 实际金额，单位分
+       * </pre>
+       */
+      public boolean hasActualAmount() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>required int32 ActualAmount = 5;</code>
+       *
+       * <pre>
+       * 实际金额，单位分
+       * </pre>
+       */
+      public int getActualAmount() {
+        return actualAmount_;
+      }
+      /**
+       * <code>required int32 ActualAmount = 5;</code>
+       *
+       * <pre>
+       * 实际金额，单位分
+       * </pre>
+       */
+      public Builder setActualAmount(int value) {
+        bitField0_ |= 0x00000010;
+        actualAmount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 ActualAmount = 5;</code>
+       *
+       * <pre>
+       * 实际金额，单位分
+       * </pre>
+       */
+      public Builder clearActualAmount() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        actualAmount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 OddAmount = 6;
+      private int oddAmount_ ;
+      /**
+       * <code>required int32 OddAmount = 6;</code>
+       *
+       * <pre>
+       * 找零金额，单位分
+       * </pre>
+       */
+      public boolean hasOddAmount() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>required int32 OddAmount = 6;</code>
+       *
+       * <pre>
+       * 找零金额，单位分
+       * </pre>
+       */
+      public int getOddAmount() {
+        return oddAmount_;
+      }
+      /**
+       * <code>required int32 OddAmount = 6;</code>
+       *
+       * <pre>
+       * 找零金额，单位分
+       * </pre>
+       */
+      public Builder setOddAmount(int value) {
+        bitField0_ |= 0x00000020;
+        oddAmount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OddAmount = 6;</code>
+       *
+       * <pre>
+       * 找零金额，单位分
+       * </pre>
+       */
+      public Builder clearOddAmount() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        oddAmount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional string VoucherCode = 7;
+      private java.lang.Object voucherCode_ = "";
+      /**
+       * <code>optional string VoucherCode = 7;</code>
+       *
+       * <pre>
+       * 凭证号，POS机小票上凭证号
+       * </pre>
+       */
+      public boolean hasVoucherCode() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>optional string VoucherCode = 7;</code>
+       *
+       * <pre>
+       * 凭证号，POS机小票上凭证号
+       * </pre>
+       */
+      public java.lang.String getVoucherCode() {
+        java.lang.Object ref = voucherCode_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          voucherCode_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string VoucherCode = 7;</code>
+       *
+       * <pre>
+       * 凭证号，POS机小票上凭证号
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getVoucherCodeBytes() {
+        java.lang.Object ref = voucherCode_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          voucherCode_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string VoucherCode = 7;</code>
+       *
+       * <pre>
+       * 凭证号，POS机小票上凭证号
+       * </pre>
+       */
+      public Builder setVoucherCode(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        voucherCode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string VoucherCode = 7;</code>
+       *
+       * <pre>
+       * 凭证号，POS机小票上凭证号
+       * </pre>
+       */
+      public Builder clearVoucherCode() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        voucherCode_ = getDefaultInstance().getVoucherCode();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string VoucherCode = 7;</code>
+       *
+       * <pre>
+       * 凭证号，POS机小票上凭证号
+       * </pre>
+       */
+      public Builder setVoucherCodeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        voucherCode_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional int64 CreateTime = 8;
+      private long createTime_ ;
+      /**
+       * <code>optional int64 CreateTime = 8;</code>
+       *
+       * <pre>
+       * 创建时间
+       * </pre>
+       */
+      public boolean hasCreateTime() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>optional int64 CreateTime = 8;</code>
+       *
+       * <pre>
+       * 创建时间
+       * </pre>
+       */
+      public long getCreateTime() {
+        return createTime_;
+      }
+      /**
+       * <code>optional int64 CreateTime = 8;</code>
+       *
+       * <pre>
+       * 创建时间
+       * </pre>
+       */
+      public Builder setCreateTime(long value) {
+        bitField0_ |= 0x00000080;
+        createTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 CreateTime = 8;</code>
+       *
+       * <pre>
+       * 创建时间
+       * </pre>
+       */
+      public Builder clearCreateTime() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        createTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 PosID = 9;
+      private int posID_ ;
+      /**
+       * <code>optional int32 PosID = 9;</code>
+       *
+       * <pre>
+       * 收银机ID
+       * </pre>
+       */
+      public boolean hasPosID() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>optional int32 PosID = 9;</code>
+       *
+       * <pre>
+       * 收银机ID
+       * </pre>
+       */
+      public int getPosID() {
+        return posID_;
+      }
+      /**
+       * <code>optional int32 PosID = 9;</code>
+       *
+       * <pre>
+       * 收银机ID
+       * </pre>
+       */
+      public Builder setPosID(int value) {
+        bitField0_ |= 0x00000100;
+        posID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 PosID = 9;</code>
+       *
+       * <pre>
+       * 收银机ID
+       * </pre>
+       */
+      public Builder clearPosID() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        posID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:OrderPaymentInfo)
+    }
+
+    static {
+      defaultInstance = new OrderPaymentInfo(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:OrderPaymentInfo)
+  }
+
+  public interface OrderLineActivityInfoOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 OrderLineID = 1;
+    /**
+     * <code>required int32 OrderLineID = 1;</code>
+     *
+     * <pre>
+     * 订单行ID
+     * </pre>
+     */
+    boolean hasOrderLineID();
+    /**
+     * <code>required int32 OrderLineID = 1;</code>
+     *
+     * <pre>
+     * 订单行ID
+     * </pre>
+     */
+    int getOrderLineID();
+
+    // required int32 ActivityID = 2;
+    /**
+     * <code>required int32 ActivityID = 2;</code>
+     *
+     * <pre>
+     * 活动ID
+     * </pre>
+     */
+    boolean hasActivityID();
+    /**
+     * <code>required int32 ActivityID = 2;</code>
+     *
+     * <pre>
+     * 活动ID
+     * </pre>
+     */
+    int getActivityID();
+
+    // required int32 OrderID = 3;
+    /**
+     * <code>required int32 OrderID = 3;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    boolean hasOrderID();
+    /**
+     * <code>required int32 OrderID = 3;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    int getOrderID();
+  }
+  /**
+   * Protobuf type {@code OrderLineActivityInfo}
+   *
+   * <pre>
+   *订单行活动信息
+   * </pre>
+   */
+  public static final class OrderLineActivityInfo extends
+      com.google.protobuf.GeneratedMessage
+      implements OrderLineActivityInfoOrBuilder {
+    // Use OrderLineActivityInfo.newBuilder() to construct.
+    private OrderLineActivityInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private OrderLineActivityInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final OrderLineActivityInfo defaultInstance;
+    public static OrderLineActivityInfo getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public OrderLineActivityInfo getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private OrderLineActivityInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              orderLineID_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              activityID_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              orderID_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineActivityInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineActivityInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<OrderLineActivityInfo> PARSER =
+        new com.google.protobuf.AbstractParser<OrderLineActivityInfo>() {
+      public OrderLineActivityInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new OrderLineActivityInfo(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<OrderLineActivityInfo> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 OrderLineID = 1;
+    public static final int ORDERLINEID_FIELD_NUMBER = 1;
+    private int orderLineID_;
+    /**
+     * <code>required int32 OrderLineID = 1;</code>
+     *
+     * <pre>
+     * 订单行ID
+     * </pre>
+     */
+    public boolean hasOrderLineID() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 OrderLineID = 1;</code>
+     *
+     * <pre>
+     * 订单行ID
+     * </pre>
+     */
+    public int getOrderLineID() {
+      return orderLineID_;
+    }
+
+    // required int32 ActivityID = 2;
+    public static final int ACTIVITYID_FIELD_NUMBER = 2;
+    private int activityID_;
+    /**
+     * <code>required int32 ActivityID = 2;</code>
+     *
+     * <pre>
+     * 活动ID
+     * </pre>
+     */
+    public boolean hasActivityID() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 ActivityID = 2;</code>
+     *
+     * <pre>
+     * 活动ID
+     * </pre>
+     */
+    public int getActivityID() {
+      return activityID_;
+    }
+
+    // required int32 OrderID = 3;
+    public static final int ORDERID_FIELD_NUMBER = 3;
+    private int orderID_;
+    /**
+     * <code>required int32 OrderID = 3;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    public boolean hasOrderID() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required int32 OrderID = 3;</code>
+     *
+     * <pre>
+     * 订单ID
+     * </pre>
+     */
+    public int getOrderID() {
+      return orderID_;
+    }
+
+    private void initFields() {
+      orderLineID_ = 0;
+      activityID_ = 0;
+      orderID_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasOrderLineID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasActivityID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOrderID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, orderLineID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, activityID_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, orderID_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, orderLineID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, activityID_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, orderID_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code OrderLineActivityInfo}
+     *
+     * <pre>
+     *订单行活动信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineActivityInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineActivityInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.Builder.class);
+      }
+
+      // Construct using com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        orderLineID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        activityID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        orderID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderLineActivityInfo_descriptor;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo getDefaultInstanceForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.getDefaultInstance();
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo build() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo buildPartial() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo result = new com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.orderLineID_ = orderLineID_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.activityID_ = activityID_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.orderID_ = orderID_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo) {
+          return mergeFrom((com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo other) {
+        if (other == com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo.getDefaultInstance()) return this;
+        if (other.hasOrderLineID()) {
+          setOrderLineID(other.getOrderLineID());
+        }
+        if (other.hasActivityID()) {
+          setActivityID(other.getActivityID());
+        }
+        if (other.hasOrderID()) {
+          setOrderID(other.getOrderID());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasOrderLineID()) {
+          
+          return false;
+        }
+        if (!hasActivityID()) {
+          
+          return false;
+        }
+        if (!hasOrderID()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mtime.client.retail.contract.dto.OrderProtos.OrderLineActivityInfo) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 OrderLineID = 1;
+      private int orderLineID_ ;
+      /**
+       * <code>required int32 OrderLineID = 1;</code>
+       *
+       * <pre>
+       * 订单行ID
+       * </pre>
+       */
+      public boolean hasOrderLineID() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 OrderLineID = 1;</code>
+       *
+       * <pre>
+       * 订单行ID
+       * </pre>
+       */
+      public int getOrderLineID() {
+        return orderLineID_;
+      }
+      /**
+       * <code>required int32 OrderLineID = 1;</code>
+       *
+       * <pre>
+       * 订单行ID
+       * </pre>
+       */
+      public Builder setOrderLineID(int value) {
+        bitField0_ |= 0x00000001;
+        orderLineID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OrderLineID = 1;</code>
+       *
+       * <pre>
+       * 订单行ID
+       * </pre>
+       */
+      public Builder clearOrderLineID() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        orderLineID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 ActivityID = 2;
+      private int activityID_ ;
+      /**
+       * <code>required int32 ActivityID = 2;</code>
+       *
+       * <pre>
+       * 活动ID
+       * </pre>
+       */
+      public boolean hasActivityID() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 ActivityID = 2;</code>
+       *
+       * <pre>
+       * 活动ID
+       * </pre>
+       */
+      public int getActivityID() {
+        return activityID_;
+      }
+      /**
+       * <code>required int32 ActivityID = 2;</code>
+       *
+       * <pre>
+       * 活动ID
+       * </pre>
+       */
+      public Builder setActivityID(int value) {
+        bitField0_ |= 0x00000002;
+        activityID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 ActivityID = 2;</code>
+       *
+       * <pre>
+       * 活动ID
+       * </pre>
+       */
+      public Builder clearActivityID() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        activityID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 OrderID = 3;
+      private int orderID_ ;
+      /**
+       * <code>required int32 OrderID = 3;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public boolean hasOrderID() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int32 OrderID = 3;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public int getOrderID() {
+        return orderID_;
+      }
+      /**
+       * <code>required int32 OrderID = 3;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public Builder setOrderID(int value) {
+        bitField0_ |= 0x00000004;
+        orderID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OrderID = 3;</code>
+       *
+       * <pre>
+       * 订单ID
+       * </pre>
+       */
+      public Builder clearOrderID() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        orderID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:OrderLineActivityInfo)
+    }
+
+    static {
+      defaultInstance = new OrderLineActivityInfo(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:OrderLineActivityInfo)
+  }
+
+  public interface OrderInvoiceInfoOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 OrderID = 1;
+    /**
+     * <code>required int32 OrderID = 1;</code>
+     */
+    boolean hasOrderID();
+    /**
+     * <code>required int32 OrderID = 1;</code>
+     */
+    int getOrderID();
+
+    // required int32 InvoiceType = 2;
+    /**
+     * <code>required int32 InvoiceType = 2;</code>
+     */
+    boolean hasInvoiceType();
+    /**
+     * <code>required int32 InvoiceType = 2;</code>
+     */
+    int getInvoiceType();
+
+    // optional int32 InvoiceMode = 3;
+    /**
+     * <code>optional int32 InvoiceMode = 3;</code>
+     */
+    boolean hasInvoiceMode();
+    /**
+     * <code>optional int32 InvoiceMode = 3;</code>
+     */
+    int getInvoiceMode();
+
+    // optional int32 InvoiceTitleType = 4;
+    /**
+     * <code>optional int32 InvoiceTitleType = 4;</code>
+     */
+    boolean hasInvoiceTitleType();
+    /**
+     * <code>optional int32 InvoiceTitleType = 4;</code>
+     */
+    int getInvoiceTitleType();
+
+    // optional string InvoiceTitle = 5;
+    /**
+     * <code>optional string InvoiceTitle = 5;</code>
+     */
+    boolean hasInvoiceTitle();
+    /**
+     * <code>optional string InvoiceTitle = 5;</code>
+     */
+    java.lang.String getInvoiceTitle();
+    /**
+     * <code>optional string InvoiceTitle = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getInvoiceTitleBytes();
+
+    // optional string ConsigneeName = 6;
+    /**
+     * <code>optional string ConsigneeName = 6;</code>
+     */
+    boolean hasConsigneeName();
+    /**
+     * <code>optional string ConsigneeName = 6;</code>
+     */
+    java.lang.String getConsigneeName();
+    /**
+     * <code>optional string ConsigneeName = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getConsigneeNameBytes();
+
+    // optional string Telephone = 7;
+    /**
+     * <code>optional string Telephone = 7;</code>
+     */
+    boolean hasTelephone();
+    /**
+     * <code>optional string Telephone = 7;</code>
+     */
+    java.lang.String getTelephone();
+    /**
+     * <code>optional string Telephone = 7;</code>
+     */
+    com.google.protobuf.ByteString
+        getTelephoneBytes();
+
+    // optional string Email = 8;
+    /**
+     * <code>optional string Email = 8;</code>
+     */
+    boolean hasEmail();
+    /**
+     * <code>optional string Email = 8;</code>
+     */
+    java.lang.String getEmail();
+    /**
+     * <code>optional string Email = 8;</code>
+     */
+    com.google.protobuf.ByteString
+        getEmailBytes();
+
+    // optional string Address = 9;
+    /**
+     * <code>optional string Address = 9;</code>
+     */
+    boolean hasAddress();
+    /**
+     * <code>optional string Address = 9;</code>
+     */
+    java.lang.String getAddress();
+    /**
+     * <code>optional string Address = 9;</code>
+     */
+    com.google.protobuf.ByteString
+        getAddressBytes();
+
+    // optional int32 ProvinceID = 10;
+    /**
+     * <code>optional int32 ProvinceID = 10;</code>
+     */
+    boolean hasProvinceID();
+    /**
+     * <code>optional int32 ProvinceID = 10;</code>
+     */
+    int getProvinceID();
+
+    // optional int32 CityID = 11;
+    /**
+     * <code>optional int32 CityID = 11;</code>
+     */
+    boolean hasCityID();
+    /**
+     * <code>optional int32 CityID = 11;</code>
+     */
+    int getCityID();
+
+    // optional int32 DistinctID = 12;
+    /**
+     * <code>optional int32 DistinctID = 12;</code>
+     */
+    boolean hasDistinctID();
+    /**
+     * <code>optional int32 DistinctID = 12;</code>
+     */
+    int getDistinctID();
+
+    // optional int32 StreetID = 13;
+    /**
+     * <code>optional int32 StreetID = 13;</code>
+     */
+    boolean hasStreetID();
+    /**
+     * <code>optional int32 StreetID = 13;</code>
+     */
+    int getStreetID();
+
+    // optional int32 UpdateUser = 14;
+    /**
+     * <code>optional int32 UpdateUser = 14;</code>
+     */
+    boolean hasUpdateUser();
+    /**
+     * <code>optional int32 UpdateUser = 14;</code>
+     */
+    int getUpdateUser();
+
+    // optional int64 UpdateTime = 15;
+    /**
+     * <code>optional int64 UpdateTime = 15;</code>
+     */
+    boolean hasUpdateTime();
+    /**
+     * <code>optional int64 UpdateTime = 15;</code>
+     */
+    long getUpdateTime();
+
+    // optional int32 InvoiceStatus = 16;
+    /**
+     * <code>optional int32 InvoiceStatus = 16;</code>
+     */
+    boolean hasInvoiceStatus();
+    /**
+     * <code>optional int32 InvoiceStatus = 16;</code>
+     */
+    int getInvoiceStatus();
+
+    // optional string AddressFull = 17;
+    /**
+     * <code>optional string AddressFull = 17;</code>
+     */
+    boolean hasAddressFull();
+    /**
+     * <code>optional string AddressFull = 17;</code>
+     */
+    java.lang.String getAddressFull();
+    /**
+     * <code>optional string AddressFull = 17;</code>
+     */
+    com.google.protobuf.ByteString
+        getAddressFullBytes();
+  }
+  /**
+   * Protobuf type {@code OrderInvoiceInfo}
+   *
+   * <pre>
+   *订单发票信息
+   * </pre>
+   */
+  public static final class OrderInvoiceInfo extends
+      com.google.protobuf.GeneratedMessage
+      implements OrderInvoiceInfoOrBuilder {
+    // Use OrderInvoiceInfo.newBuilder() to construct.
+    private OrderInvoiceInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private OrderInvoiceInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final OrderInvoiceInfo defaultInstance;
+    public static OrderInvoiceInfo getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public OrderInvoiceInfo getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private OrderInvoiceInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              orderID_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              invoiceType_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              invoiceMode_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              invoiceTitleType_ = input.readInt32();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              invoiceTitle_ = input.readBytes();
+              break;
+            }
+            case 50: {
+              bitField0_ |= 0x00000020;
+              consigneeName_ = input.readBytes();
+              break;
+            }
+            case 58: {
+              bitField0_ |= 0x00000040;
+              telephone_ = input.readBytes();
+              break;
+            }
+            case 66: {
+              bitField0_ |= 0x00000080;
+              email_ = input.readBytes();
+              break;
+            }
+            case 74: {
+              bitField0_ |= 0x00000100;
+              address_ = input.readBytes();
+              break;
+            }
+            case 80: {
+              bitField0_ |= 0x00000200;
+              provinceID_ = input.readInt32();
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000400;
+              cityID_ = input.readInt32();
+              break;
+            }
+            case 96: {
+              bitField0_ |= 0x00000800;
+              distinctID_ = input.readInt32();
+              break;
+            }
+            case 104: {
+              bitField0_ |= 0x00001000;
+              streetID_ = input.readInt32();
+              break;
+            }
+            case 112: {
+              bitField0_ |= 0x00002000;
+              updateUser_ = input.readInt32();
+              break;
+            }
+            case 120: {
+              bitField0_ |= 0x00004000;
+              updateTime_ = input.readInt64();
+              break;
+            }
+            case 128: {
+              bitField0_ |= 0x00008000;
+              invoiceStatus_ = input.readInt32();
+              break;
+            }
+            case 138: {
+              bitField0_ |= 0x00010000;
+              addressFull_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInvoiceInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInvoiceInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<OrderInvoiceInfo> PARSER =
+        new com.google.protobuf.AbstractParser<OrderInvoiceInfo>() {
+      public OrderInvoiceInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new OrderInvoiceInfo(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<OrderInvoiceInfo> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 OrderID = 1;
+    public static final int ORDERID_FIELD_NUMBER = 1;
+    private int orderID_;
+    /**
+     * <code>required int32 OrderID = 1;</code>
+     */
+    public boolean hasOrderID() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 OrderID = 1;</code>
+     */
+    public int getOrderID() {
+      return orderID_;
+    }
+
+    // required int32 InvoiceType = 2;
+    public static final int INVOICETYPE_FIELD_NUMBER = 2;
+    private int invoiceType_;
+    /**
+     * <code>required int32 InvoiceType = 2;</code>
+     */
+    public boolean hasInvoiceType() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 InvoiceType = 2;</code>
+     */
+    public int getInvoiceType() {
+      return invoiceType_;
+    }
+
+    // optional int32 InvoiceMode = 3;
+    public static final int INVOICEMODE_FIELD_NUMBER = 3;
+    private int invoiceMode_;
+    /**
+     * <code>optional int32 InvoiceMode = 3;</code>
+     */
+    public boolean hasInvoiceMode() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int32 InvoiceMode = 3;</code>
+     */
+    public int getInvoiceMode() {
+      return invoiceMode_;
+    }
+
+    // optional int32 InvoiceTitleType = 4;
+    public static final int INVOICETITLETYPE_FIELD_NUMBER = 4;
+    private int invoiceTitleType_;
+    /**
+     * <code>optional int32 InvoiceTitleType = 4;</code>
+     */
+    public boolean hasInvoiceTitleType() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 InvoiceTitleType = 4;</code>
+     */
+    public int getInvoiceTitleType() {
+      return invoiceTitleType_;
+    }
+
+    // optional string InvoiceTitle = 5;
+    public static final int INVOICETITLE_FIELD_NUMBER = 5;
+    private java.lang.Object invoiceTitle_;
+    /**
+     * <code>optional string InvoiceTitle = 5;</code>
+     */
+    public boolean hasInvoiceTitle() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional string InvoiceTitle = 5;</code>
+     */
+    public java.lang.String getInvoiceTitle() {
+      java.lang.Object ref = invoiceTitle_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          invoiceTitle_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string InvoiceTitle = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getInvoiceTitleBytes() {
+      java.lang.Object ref = invoiceTitle_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        invoiceTitle_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string ConsigneeName = 6;
+    public static final int CONSIGNEENAME_FIELD_NUMBER = 6;
+    private java.lang.Object consigneeName_;
+    /**
+     * <code>optional string ConsigneeName = 6;</code>
+     */
+    public boolean hasConsigneeName() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>optional string ConsigneeName = 6;</code>
+     */
+    public java.lang.String getConsigneeName() {
+      java.lang.Object ref = consigneeName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          consigneeName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string ConsigneeName = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getConsigneeNameBytes() {
+      java.lang.Object ref = consigneeName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        consigneeName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string Telephone = 7;
+    public static final int TELEPHONE_FIELD_NUMBER = 7;
+    private java.lang.Object telephone_;
+    /**
+     * <code>optional string Telephone = 7;</code>
+     */
+    public boolean hasTelephone() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>optional string Telephone = 7;</code>
+     */
+    public java.lang.String getTelephone() {
+      java.lang.Object ref = telephone_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          telephone_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string Telephone = 7;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTelephoneBytes() {
+      java.lang.Object ref = telephone_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        telephone_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string Email = 8;
+    public static final int EMAIL_FIELD_NUMBER = 8;
+    private java.lang.Object email_;
+    /**
+     * <code>optional string Email = 8;</code>
+     */
+    public boolean hasEmail() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>optional string Email = 8;</code>
+     */
+    public java.lang.String getEmail() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          email_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string Email = 8;</code>
+     */
+    public com.google.protobuf.ByteString
+        getEmailBytes() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        email_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string Address = 9;
+    public static final int ADDRESS_FIELD_NUMBER = 9;
+    private java.lang.Object address_;
+    /**
+     * <code>optional string Address = 9;</code>
+     */
+    public boolean hasAddress() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>optional string Address = 9;</code>
+     */
+    public java.lang.String getAddress() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          address_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string Address = 9;</code>
+     */
+    public com.google.protobuf.ByteString
+        getAddressBytes() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        address_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int32 ProvinceID = 10;
+    public static final int PROVINCEID_FIELD_NUMBER = 10;
+    private int provinceID_;
+    /**
+     * <code>optional int32 ProvinceID = 10;</code>
+     */
+    public boolean hasProvinceID() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    /**
+     * <code>optional int32 ProvinceID = 10;</code>
+     */
+    public int getProvinceID() {
+      return provinceID_;
+    }
+
+    // optional int32 CityID = 11;
+    public static final int CITYID_FIELD_NUMBER = 11;
+    private int cityID_;
+    /**
+     * <code>optional int32 CityID = 11;</code>
+     */
+    public boolean hasCityID() {
+      return ((bitField0_ & 0x00000400) == 0x00000400);
+    }
+    /**
+     * <code>optional int32 CityID = 11;</code>
+     */
+    public int getCityID() {
+      return cityID_;
+    }
+
+    // optional int32 DistinctID = 12;
+    public static final int DISTINCTID_FIELD_NUMBER = 12;
+    private int distinctID_;
+    /**
+     * <code>optional int32 DistinctID = 12;</code>
+     */
+    public boolean hasDistinctID() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    /**
+     * <code>optional int32 DistinctID = 12;</code>
+     */
+    public int getDistinctID() {
+      return distinctID_;
+    }
+
+    // optional int32 StreetID = 13;
+    public static final int STREETID_FIELD_NUMBER = 13;
+    private int streetID_;
+    /**
+     * <code>optional int32 StreetID = 13;</code>
+     */
+    public boolean hasStreetID() {
+      return ((bitField0_ & 0x00001000) == 0x00001000);
+    }
+    /**
+     * <code>optional int32 StreetID = 13;</code>
+     */
+    public int getStreetID() {
+      return streetID_;
+    }
+
+    // optional int32 UpdateUser = 14;
+    public static final int UPDATEUSER_FIELD_NUMBER = 14;
+    private int updateUser_;
+    /**
+     * <code>optional int32 UpdateUser = 14;</code>
+     */
+    public boolean hasUpdateUser() {
+      return ((bitField0_ & 0x00002000) == 0x00002000);
+    }
+    /**
+     * <code>optional int32 UpdateUser = 14;</code>
+     */
+    public int getUpdateUser() {
+      return updateUser_;
+    }
+
+    // optional int64 UpdateTime = 15;
+    public static final int UPDATETIME_FIELD_NUMBER = 15;
+    private long updateTime_;
+    /**
+     * <code>optional int64 UpdateTime = 15;</code>
+     */
+    public boolean hasUpdateTime() {
+      return ((bitField0_ & 0x00004000) == 0x00004000);
+    }
+    /**
+     * <code>optional int64 UpdateTime = 15;</code>
+     */
+    public long getUpdateTime() {
+      return updateTime_;
+    }
+
+    // optional int32 InvoiceStatus = 16;
+    public static final int INVOICESTATUS_FIELD_NUMBER = 16;
+    private int invoiceStatus_;
+    /**
+     * <code>optional int32 InvoiceStatus = 16;</code>
+     */
+    public boolean hasInvoiceStatus() {
+      return ((bitField0_ & 0x00008000) == 0x00008000);
+    }
+    /**
+     * <code>optional int32 InvoiceStatus = 16;</code>
+     */
+    public int getInvoiceStatus() {
+      return invoiceStatus_;
+    }
+
+    // optional string AddressFull = 17;
+    public static final int ADDRESSFULL_FIELD_NUMBER = 17;
+    private java.lang.Object addressFull_;
+    /**
+     * <code>optional string AddressFull = 17;</code>
+     */
+    public boolean hasAddressFull() {
+      return ((bitField0_ & 0x00010000) == 0x00010000);
+    }
+    /**
+     * <code>optional string AddressFull = 17;</code>
+     */
+    public java.lang.String getAddressFull() {
+      java.lang.Object ref = addressFull_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          addressFull_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string AddressFull = 17;</code>
+     */
+    public com.google.protobuf.ByteString
+        getAddressFullBytes() {
+      java.lang.Object ref = addressFull_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        addressFull_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      orderID_ = 0;
+      invoiceType_ = 0;
+      invoiceMode_ = 0;
+      invoiceTitleType_ = 0;
+      invoiceTitle_ = "";
+      consigneeName_ = "";
+      telephone_ = "";
+      email_ = "";
+      address_ = "";
+      provinceID_ = 0;
+      cityID_ = 0;
+      distinctID_ = 0;
+      streetID_ = 0;
+      updateUser_ = 0;
+      updateTime_ = 0L;
+      invoiceStatus_ = 0;
+      addressFull_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasOrderID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasInvoiceType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, orderID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, invoiceType_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, invoiceMode_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, invoiceTitleType_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeBytes(5, getInvoiceTitleBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBytes(6, getConsigneeNameBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeBytes(7, getTelephoneBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeBytes(8, getEmailBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeBytes(9, getAddressBytes());
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeInt32(10, provinceID_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        output.writeInt32(11, cityID_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        output.writeInt32(12, distinctID_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        output.writeInt32(13, streetID_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        output.writeInt32(14, updateUser_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        output.writeInt64(15, updateTime_);
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        output.writeInt32(16, invoiceStatus_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        output.writeBytes(17, getAddressFullBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, orderID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, invoiceType_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, invoiceMode_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, invoiceTitleType_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getInvoiceTitleBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(6, getConsigneeNameBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(7, getTelephoneBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(8, getEmailBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(9, getAddressBytes());
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, provinceID_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, cityID_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, distinctID_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, streetID_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, updateUser_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(15, updateTime_);
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(16, invoiceStatus_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(17, getAddressFullBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code OrderInvoiceInfo}
+     *
+     * <pre>
+     *订单发票信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInvoiceInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInvoiceInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.class, com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.Builder.class);
+      }
+
+      // Construct using com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        orderID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        invoiceType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        invoiceMode_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        invoiceTitleType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        invoiceTitle_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
+        consigneeName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000020);
+        telephone_ = "";
+        bitField0_ = (bitField0_ & ~0x00000040);
+        email_ = "";
+        bitField0_ = (bitField0_ & ~0x00000080);
+        address_ = "";
+        bitField0_ = (bitField0_ & ~0x00000100);
+        provinceID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000200);
+        cityID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000400);
+        distinctID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000800);
+        streetID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00001000);
+        updateUser_ = 0;
+        bitField0_ = (bitField0_ & ~0x00002000);
+        updateTime_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00004000);
+        invoiceStatus_ = 0;
+        bitField0_ = (bitField0_ & ~0x00008000);
+        addressFull_ = "";
+        bitField0_ = (bitField0_ & ~0x00010000);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.internal_static_OrderInvoiceInfo_descriptor;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo getDefaultInstanceForType() {
+        return com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.getDefaultInstance();
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo build() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo buildPartial() {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo result = new com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.orderID_ = orderID_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.invoiceType_ = invoiceType_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.invoiceMode_ = invoiceMode_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.invoiceTitleType_ = invoiceTitleType_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.invoiceTitle_ = invoiceTitle_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.consigneeName_ = consigneeName_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.telephone_ = telephone_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.email_ = email_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.address_ = address_;
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        result.provinceID_ = provinceID_;
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000400;
+        }
+        result.cityID_ = cityID_;
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        result.distinctID_ = distinctID_;
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00001000;
+        }
+        result.streetID_ = streetID_;
+        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+          to_bitField0_ |= 0x00002000;
+        }
+        result.updateUser_ = updateUser_;
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00004000;
+        }
+        result.updateTime_ = updateTime_;
+        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+          to_bitField0_ |= 0x00008000;
+        }
+        result.invoiceStatus_ = invoiceStatus_;
+        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+          to_bitField0_ |= 0x00010000;
+        }
+        result.addressFull_ = addressFull_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo) {
+          return mergeFrom((com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo other) {
+        if (other == com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo.getDefaultInstance()) return this;
+        if (other.hasOrderID()) {
+          setOrderID(other.getOrderID());
+        }
+        if (other.hasInvoiceType()) {
+          setInvoiceType(other.getInvoiceType());
+        }
+        if (other.hasInvoiceMode()) {
+          setInvoiceMode(other.getInvoiceMode());
+        }
+        if (other.hasInvoiceTitleType()) {
+          setInvoiceTitleType(other.getInvoiceTitleType());
+        }
+        if (other.hasInvoiceTitle()) {
+          bitField0_ |= 0x00000010;
+          invoiceTitle_ = other.invoiceTitle_;
+          onChanged();
+        }
+        if (other.hasConsigneeName()) {
+          bitField0_ |= 0x00000020;
+          consigneeName_ = other.consigneeName_;
+          onChanged();
+        }
+        if (other.hasTelephone()) {
+          bitField0_ |= 0x00000040;
+          telephone_ = other.telephone_;
+          onChanged();
+        }
+        if (other.hasEmail()) {
+          bitField0_ |= 0x00000080;
+          email_ = other.email_;
+          onChanged();
+        }
+        if (other.hasAddress()) {
+          bitField0_ |= 0x00000100;
+          address_ = other.address_;
+          onChanged();
+        }
+        if (other.hasProvinceID()) {
+          setProvinceID(other.getProvinceID());
+        }
+        if (other.hasCityID()) {
+          setCityID(other.getCityID());
+        }
+        if (other.hasDistinctID()) {
+          setDistinctID(other.getDistinctID());
+        }
+        if (other.hasStreetID()) {
+          setStreetID(other.getStreetID());
+        }
+        if (other.hasUpdateUser()) {
+          setUpdateUser(other.getUpdateUser());
+        }
+        if (other.hasUpdateTime()) {
+          setUpdateTime(other.getUpdateTime());
+        }
+        if (other.hasInvoiceStatus()) {
+          setInvoiceStatus(other.getInvoiceStatus());
+        }
+        if (other.hasAddressFull()) {
+          bitField0_ |= 0x00010000;
+          addressFull_ = other.addressFull_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasOrderID()) {
+          
+          return false;
+        }
+        if (!hasInvoiceType()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mtime.client.retail.contract.dto.OrderProtos.OrderInvoiceInfo) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 OrderID = 1;
+      private int orderID_ ;
+      /**
+       * <code>required int32 OrderID = 1;</code>
+       */
+      public boolean hasOrderID() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 OrderID = 1;</code>
+       */
+      public int getOrderID() {
+        return orderID_;
+      }
+      /**
+       * <code>required int32 OrderID = 1;</code>
+       */
+      public Builder setOrderID(int value) {
+        bitField0_ |= 0x00000001;
+        orderID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 OrderID = 1;</code>
+       */
+      public Builder clearOrderID() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        orderID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 InvoiceType = 2;
+      private int invoiceType_ ;
+      /**
+       * <code>required int32 InvoiceType = 2;</code>
+       */
+      public boolean hasInvoiceType() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 InvoiceType = 2;</code>
+       */
+      public int getInvoiceType() {
+        return invoiceType_;
+      }
+      /**
+       * <code>required int32 InvoiceType = 2;</code>
+       */
+      public Builder setInvoiceType(int value) {
+        bitField0_ |= 0x00000002;
+        invoiceType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 InvoiceType = 2;</code>
+       */
+      public Builder clearInvoiceType() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        invoiceType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 InvoiceMode = 3;
+      private int invoiceMode_ ;
+      /**
+       * <code>optional int32 InvoiceMode = 3;</code>
+       */
+      public boolean hasInvoiceMode() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 InvoiceMode = 3;</code>
+       */
+      public int getInvoiceMode() {
+        return invoiceMode_;
+      }
+      /**
+       * <code>optional int32 InvoiceMode = 3;</code>
+       */
+      public Builder setInvoiceMode(int value) {
+        bitField0_ |= 0x00000004;
+        invoiceMode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 InvoiceMode = 3;</code>
+       */
+      public Builder clearInvoiceMode() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        invoiceMode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 InvoiceTitleType = 4;
+      private int invoiceTitleType_ ;
+      /**
+       * <code>optional int32 InvoiceTitleType = 4;</code>
+       */
+      public boolean hasInvoiceTitleType() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional int32 InvoiceTitleType = 4;</code>
+       */
+      public int getInvoiceTitleType() {
+        return invoiceTitleType_;
+      }
+      /**
+       * <code>optional int32 InvoiceTitleType = 4;</code>
+       */
+      public Builder setInvoiceTitleType(int value) {
+        bitField0_ |= 0x00000008;
+        invoiceTitleType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 InvoiceTitleType = 4;</code>
+       */
+      public Builder clearInvoiceTitleType() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        invoiceTitleType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional string InvoiceTitle = 5;
+      private java.lang.Object invoiceTitle_ = "";
+      /**
+       * <code>optional string InvoiceTitle = 5;</code>
+       */
+      public boolean hasInvoiceTitle() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional string InvoiceTitle = 5;</code>
+       */
+      public java.lang.String getInvoiceTitle() {
+        java.lang.Object ref = invoiceTitle_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          invoiceTitle_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string InvoiceTitle = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getInvoiceTitleBytes() {
+        java.lang.Object ref = invoiceTitle_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          invoiceTitle_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string InvoiceTitle = 5;</code>
+       */
+      public Builder setInvoiceTitle(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        invoiceTitle_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string InvoiceTitle = 5;</code>
+       */
+      public Builder clearInvoiceTitle() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        invoiceTitle_ = getDefaultInstance().getInvoiceTitle();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string InvoiceTitle = 5;</code>
+       */
+      public Builder setInvoiceTitleBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        invoiceTitle_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string ConsigneeName = 6;
+      private java.lang.Object consigneeName_ = "";
+      /**
+       * <code>optional string ConsigneeName = 6;</code>
+       */
+      public boolean hasConsigneeName() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>optional string ConsigneeName = 6;</code>
+       */
+      public java.lang.String getConsigneeName() {
+        java.lang.Object ref = consigneeName_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          consigneeName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string ConsigneeName = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getConsigneeNameBytes() {
+        java.lang.Object ref = consigneeName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          consigneeName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string ConsigneeName = 6;</code>
+       */
+      public Builder setConsigneeName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        consigneeName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string ConsigneeName = 6;</code>
+       */
+      public Builder clearConsigneeName() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        consigneeName_ = getDefaultInstance().getConsigneeName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string ConsigneeName = 6;</code>
+       */
+      public Builder setConsigneeNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        consigneeName_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string Telephone = 7;
+      private java.lang.Object telephone_ = "";
+      /**
+       * <code>optional string Telephone = 7;</code>
+       */
+      public boolean hasTelephone() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>optional string Telephone = 7;</code>
+       */
+      public java.lang.String getTelephone() {
+        java.lang.Object ref = telephone_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          telephone_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string Telephone = 7;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTelephoneBytes() {
+        java.lang.Object ref = telephone_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          telephone_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string Telephone = 7;</code>
+       */
+      public Builder setTelephone(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        telephone_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Telephone = 7;</code>
+       */
+      public Builder clearTelephone() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        telephone_ = getDefaultInstance().getTelephone();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Telephone = 7;</code>
+       */
+      public Builder setTelephoneBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        telephone_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string Email = 8;
+      private java.lang.Object email_ = "";
+      /**
+       * <code>optional string Email = 8;</code>
+       */
+      public boolean hasEmail() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>optional string Email = 8;</code>
+       */
+      public java.lang.String getEmail() {
+        java.lang.Object ref = email_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          email_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string Email = 8;</code>
+       */
+      public com.google.protobuf.ByteString
+          getEmailBytes() {
+        java.lang.Object ref = email_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          email_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string Email = 8;</code>
+       */
+      public Builder setEmail(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
+        email_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Email = 8;</code>
+       */
+      public Builder clearEmail() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        email_ = getDefaultInstance().getEmail();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Email = 8;</code>
+       */
+      public Builder setEmailBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
+        email_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string Address = 9;
+      private java.lang.Object address_ = "";
+      /**
+       * <code>optional string Address = 9;</code>
+       */
+      public boolean hasAddress() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>optional string Address = 9;</code>
+       */
+      public java.lang.String getAddress() {
+        java.lang.Object ref = address_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          address_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string Address = 9;</code>
+       */
+      public com.google.protobuf.ByteString
+          getAddressBytes() {
+        java.lang.Object ref = address_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          address_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string Address = 9;</code>
+       */
+      public Builder setAddress(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000100;
+        address_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Address = 9;</code>
+       */
+      public Builder clearAddress() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        address_ = getDefaultInstance().getAddress();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string Address = 9;</code>
+       */
+      public Builder setAddressBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000100;
+        address_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 ProvinceID = 10;
+      private int provinceID_ ;
+      /**
+       * <code>optional int32 ProvinceID = 10;</code>
+       */
+      public boolean hasProvinceID() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      /**
+       * <code>optional int32 ProvinceID = 10;</code>
+       */
+      public int getProvinceID() {
+        return provinceID_;
+      }
+      /**
+       * <code>optional int32 ProvinceID = 10;</code>
+       */
+      public Builder setProvinceID(int value) {
+        bitField0_ |= 0x00000200;
+        provinceID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 ProvinceID = 10;</code>
+       */
+      public Builder clearProvinceID() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        provinceID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 CityID = 11;
+      private int cityID_ ;
+      /**
+       * <code>optional int32 CityID = 11;</code>
+       */
+      public boolean hasCityID() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      /**
+       * <code>optional int32 CityID = 11;</code>
+       */
+      public int getCityID() {
+        return cityID_;
+      }
+      /**
+       * <code>optional int32 CityID = 11;</code>
+       */
+      public Builder setCityID(int value) {
+        bitField0_ |= 0x00000400;
+        cityID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 CityID = 11;</code>
+       */
+      public Builder clearCityID() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        cityID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 DistinctID = 12;
+      private int distinctID_ ;
+      /**
+       * <code>optional int32 DistinctID = 12;</code>
+       */
+      public boolean hasDistinctID() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      /**
+       * <code>optional int32 DistinctID = 12;</code>
+       */
+      public int getDistinctID() {
+        return distinctID_;
+      }
+      /**
+       * <code>optional int32 DistinctID = 12;</code>
+       */
+      public Builder setDistinctID(int value) {
+        bitField0_ |= 0x00000800;
+        distinctID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 DistinctID = 12;</code>
+       */
+      public Builder clearDistinctID() {
+        bitField0_ = (bitField0_ & ~0x00000800);
+        distinctID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 StreetID = 13;
+      private int streetID_ ;
+      /**
+       * <code>optional int32 StreetID = 13;</code>
+       */
+      public boolean hasStreetID() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      /**
+       * <code>optional int32 StreetID = 13;</code>
+       */
+      public int getStreetID() {
+        return streetID_;
+      }
+      /**
+       * <code>optional int32 StreetID = 13;</code>
+       */
+      public Builder setStreetID(int value) {
+        bitField0_ |= 0x00001000;
+        streetID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 StreetID = 13;</code>
+       */
+      public Builder clearStreetID() {
+        bitField0_ = (bitField0_ & ~0x00001000);
+        streetID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 UpdateUser = 14;
+      private int updateUser_ ;
+      /**
+       * <code>optional int32 UpdateUser = 14;</code>
+       */
+      public boolean hasUpdateUser() {
+        return ((bitField0_ & 0x00002000) == 0x00002000);
+      }
+      /**
+       * <code>optional int32 UpdateUser = 14;</code>
+       */
+      public int getUpdateUser() {
+        return updateUser_;
+      }
+      /**
+       * <code>optional int32 UpdateUser = 14;</code>
+       */
+      public Builder setUpdateUser(int value) {
+        bitField0_ |= 0x00002000;
+        updateUser_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 UpdateUser = 14;</code>
+       */
+      public Builder clearUpdateUser() {
+        bitField0_ = (bitField0_ & ~0x00002000);
+        updateUser_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int64 UpdateTime = 15;
+      private long updateTime_ ;
+      /**
+       * <code>optional int64 UpdateTime = 15;</code>
+       */
+      public boolean hasUpdateTime() {
+        return ((bitField0_ & 0x00004000) == 0x00004000);
+      }
+      /**
+       * <code>optional int64 UpdateTime = 15;</code>
+       */
+      public long getUpdateTime() {
+        return updateTime_;
+      }
+      /**
+       * <code>optional int64 UpdateTime = 15;</code>
+       */
+      public Builder setUpdateTime(long value) {
+        bitField0_ |= 0x00004000;
+        updateTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 UpdateTime = 15;</code>
+       */
+      public Builder clearUpdateTime() {
+        bitField0_ = (bitField0_ & ~0x00004000);
+        updateTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 InvoiceStatus = 16;
+      private int invoiceStatus_ ;
+      /**
+       * <code>optional int32 InvoiceStatus = 16;</code>
+       */
+      public boolean hasInvoiceStatus() {
+        return ((bitField0_ & 0x00008000) == 0x00008000);
+      }
+      /**
+       * <code>optional int32 InvoiceStatus = 16;</code>
+       */
+      public int getInvoiceStatus() {
+        return invoiceStatus_;
+      }
+      /**
+       * <code>optional int32 InvoiceStatus = 16;</code>
+       */
+      public Builder setInvoiceStatus(int value) {
+        bitField0_ |= 0x00008000;
+        invoiceStatus_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 InvoiceStatus = 16;</code>
+       */
+      public Builder clearInvoiceStatus() {
+        bitField0_ = (bitField0_ & ~0x00008000);
+        invoiceStatus_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional string AddressFull = 17;
+      private java.lang.Object addressFull_ = "";
+      /**
+       * <code>optional string AddressFull = 17;</code>
+       */
+      public boolean hasAddressFull() {
+        return ((bitField0_ & 0x00010000) == 0x00010000);
+      }
+      /**
+       * <code>optional string AddressFull = 17;</code>
+       */
+      public java.lang.String getAddressFull() {
+        java.lang.Object ref = addressFull_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          addressFull_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string AddressFull = 17;</code>
+       */
+      public com.google.protobuf.ByteString
+          getAddressFullBytes() {
+        java.lang.Object ref = addressFull_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          addressFull_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string AddressFull = 17;</code>
+       */
+      public Builder setAddressFull(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00010000;
+        addressFull_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string AddressFull = 17;</code>
+       */
+      public Builder clearAddressFull() {
+        bitField0_ = (bitField0_ & ~0x00010000);
+        addressFull_ = getDefaultInstance().getAddressFull();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string AddressFull = 17;</code>
+       */
+      public Builder setAddressFullBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00010000;
+        addressFull_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:OrderInvoiceInfo)
+    }
+
+    static {
+      defaultInstance = new OrderInvoiceInfo(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:OrderInvoiceInfo)
+  }
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_Order_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_Order_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_OrderInfo_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_OrderInfo_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_OrderLineInfo_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_OrderLineInfo_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_OrderPaymentInfo_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_OrderPaymentInfo_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_OrderLineActivityInfo_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_OrderLineActivityInfo_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_OrderInvoiceInfo_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_OrderInvoiceInfo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -591,8 +10808,42 @@ public final class OrderProtos {
   static {
     java.lang.String[] descriptorData = {
       "\n\013Order.proto\"+\n\005Order\022\017\n\007OrderID\030\001 \002(\005\022" +
-      "\021\n\tOrderCode\030\002 \002(\tB3\n$com.mtime.client.r" +
-      "etail.contract.dtoB\013OrderProtos"
+      "\021\n\tOrderCode\030\002 \002(\t\"\200\004\n\tOrderInfo\022\017\n\007Orde" +
+      "rID\030\001 \002(\005\022\022\n\nOperatorID\030\002 \002(\005\022\022\n\nTermina" +
+      "lID\030\003 \002(\005\022\017\n\007StoreID\030\004 \002(\005\022\023\n\013WarehouseI" +
+      "D\030\005 \002(\005\022\023\n\013OrderStatus\030\006 \002(\005\022\021\n\tOrderCod" +
+      "e\030\007 \002(\t\022\026\n\016StoreOrderCode\030\010 \002(\t\022\021\n\tPaySt" +
+      "atus\030\t \001(\005\022\017\n\007PayTime\030\n \001(\003\022\020\n\010Quantity\030" +
+      "\013 \001(\005\022\016\n\006Amount\030\014 \001(\005\022\024\n\014ActualAmount\030\r " +
+      "\001(\005\022\022\n\nCreateTime\030\016 \001(\003\022\014\n\004Note\030\017 \001(\t\022&\n" +
+      "\016OrderLineInfos\030\020 \003(\0132\016.OrderLineInfo\022&\n",
+      "\013PaymentList\030\021 \003(\0132\021.OrderPaymentInfo\022\020\n" +
+      "\010CinemaID\030\023 \001(\005\022\024\n\014DeductAmount\030\024 \001(\005\0226\n" +
+      "\026OrderLineActivityInfos\030\025 \003(\0132\026.OrderLin" +
+      "eActivityInfo\022&\n\013InvoiceInfo\030\026 \001(\0132\021.Ord" +
+      "erInvoiceInfo\"\260\001\n\rOrderLineInfo\022\023\n\013Order" +
+      "LineID\030\001 \002(\005\022\017\n\007OrderID\030\002 \002(\005\022\017\n\007GoodsID" +
+      "\030\003 \002(\005\022\r\n\005SkuID\030\004 \002(\005\022\021\n\tBatchCode\030\005 \002(\t" +
+      "\022\r\n\005Price\030\006 \002(\005\022\020\n\010Quantity\030\007 \002(\005\022\023\n\013Des" +
+      "cription\030\010 \001(\t\022\020\n\010TxnPrice\030\t \001(\005\"\301\001\n\020Ord" +
+      "erPaymentInfo\022\026\n\016OrderPaymentID\030\001 \001(\005\022\017\n",
+      "\007OrderID\030\002 \002(\005\022\023\n\013PaymentType\030\003 \002(\005\022\016\n\006A" +
+      "mount\030\004 \002(\005\022\024\n\014ActualAmount\030\005 \002(\005\022\021\n\tOdd" +
+      "Amount\030\006 \002(\005\022\023\n\013VoucherCode\030\007 \001(\t\022\022\n\nCre" +
+      "ateTime\030\010 \001(\003\022\r\n\005PosID\030\t \001(\005\"Q\n\025OrderLin" +
+      "eActivityInfo\022\023\n\013OrderLineID\030\001 \002(\005\022\022\n\nAc" +
+      "tivityID\030\002 \002(\005\022\017\n\007OrderID\030\003 \002(\005\"\345\002\n\020Orde" +
+      "rInvoiceInfo\022\017\n\007OrderID\030\001 \002(\005\022\023\n\013Invoice" +
+      "Type\030\002 \002(\005\022\023\n\013InvoiceMode\030\003 \001(\005\022\030\n\020Invoi" +
+      "ceTitleType\030\004 \001(\005\022\024\n\014InvoiceTitle\030\005 \001(\t\022" +
+      "\025\n\rConsigneeName\030\006 \001(\t\022\021\n\tTelephone\030\007 \001(",
+      "\t\022\r\n\005Email\030\010 \001(\t\022\017\n\007Address\030\t \001(\t\022\022\n\nPro" +
+      "vinceID\030\n \001(\005\022\016\n\006CityID\030\013 \001(\005\022\022\n\nDistinc" +
+      "tID\030\014 \001(\005\022\020\n\010StreetID\030\r \001(\005\022\022\n\nUpdateUse" +
+      "r\030\016 \001(\005\022\022\n\nUpdateTime\030\017 \001(\003\022\025\n\rInvoiceSt" +
+      "atus\030\020 \001(\005\022\023\n\013AddressFull\030\021 \001(\tB3\n$com.m" +
+      "time.client.retail.contract.dtoB\013OrderPr" +
+      "otos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -605,6 +10856,36 @@ public final class OrderProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_Order_descriptor,
               new java.lang.String[] { "OrderID", "OrderCode", });
+          internal_static_OrderInfo_descriptor =
+            getDescriptor().getMessageTypes().get(1);
+          internal_static_OrderInfo_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_OrderInfo_descriptor,
+              new java.lang.String[] { "OrderID", "OperatorID", "TerminalID", "StoreID", "WarehouseID", "OrderStatus", "OrderCode", "StoreOrderCode", "PayStatus", "PayTime", "Quantity", "Amount", "ActualAmount", "CreateTime", "Note", "OrderLineInfos", "PaymentList", "CinemaID", "DeductAmount", "OrderLineActivityInfos", "InvoiceInfo", });
+          internal_static_OrderLineInfo_descriptor =
+            getDescriptor().getMessageTypes().get(2);
+          internal_static_OrderLineInfo_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_OrderLineInfo_descriptor,
+              new java.lang.String[] { "OrderLineID", "OrderID", "GoodsID", "SkuID", "BatchCode", "Price", "Quantity", "Description", "TxnPrice", });
+          internal_static_OrderPaymentInfo_descriptor =
+            getDescriptor().getMessageTypes().get(3);
+          internal_static_OrderPaymentInfo_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_OrderPaymentInfo_descriptor,
+              new java.lang.String[] { "OrderPaymentID", "OrderID", "PaymentType", "Amount", "ActualAmount", "OddAmount", "VoucherCode", "CreateTime", "PosID", });
+          internal_static_OrderLineActivityInfo_descriptor =
+            getDescriptor().getMessageTypes().get(4);
+          internal_static_OrderLineActivityInfo_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_OrderLineActivityInfo_descriptor,
+              new java.lang.String[] { "OrderLineID", "ActivityID", "OrderID", });
+          internal_static_OrderInvoiceInfo_descriptor =
+            getDescriptor().getMessageTypes().get(5);
+          internal_static_OrderInvoiceInfo_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_OrderInvoiceInfo_descriptor,
+              new java.lang.String[] { "OrderID", "InvoiceType", "InvoiceMode", "InvoiceTitleType", "InvoiceTitle", "ConsigneeName", "Telephone", "Email", "Address", "ProvinceID", "CityID", "DistinctID", "StreetID", "UpdateUser", "UpdateTime", "InvoiceStatus", "AddressFull", });
           return null;
         }
       };
