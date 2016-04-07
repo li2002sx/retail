@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="order" >
+    <resultMap id="BaseResultMap" type="com.mtime.client.retail.model.Order" >
+        <id column="OrderID" property="orderID" jdbcType="INTEGER" />
+        <result column="OrderCode" property="orderCode" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+        OrderID, OrderCode
+    </sql>
+    <select id="selectByOrderId" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from `Order`
+        where OrderID = #{orderid,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from Order
+        where OrderID = #{orderid,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.mtime.client.retail.model.Order" >
+        insert into Order (OrderID, OperatorID, TerminalID,
+        StoreID, WarehouseID, OrderStatus,
+        OrderCode, StoreOrderCode, PayStatus,
+        PayTime, Quantity, Amount,
+        ActualAmount, CreateTime, Note,
+        CancelRemark, DeductAmount, UpdateTime
+        )
+        values (#{orderid,jdbcType=INTEGER}, #{operatorid,jdbcType=INTEGER}, #{terminalid,jdbcType=INTEGER},
+        #{storeid,jdbcType=INTEGER}, #{warehouseid,jdbcType=INTEGER}, #{orderstatus,jdbcType=INTEGER},
+        #{ordercode,jdbcType=VARCHAR}, #{storeordercode,jdbcType=VARCHAR}, #{paystatus,jdbcType=INTEGER},
+        #{paytime,jdbcType=TIMESTAMP}, #{quantity,jdbcType=INTEGER}, #{amount,jdbcType=INTEGER},
+        #{actualamount,jdbcType=INTEGER}, #{createtime,jdbcType=TIMESTAMP}, #{note,jdbcType=VARCHAR},
+        #{cancelremark,jdbcType=VARCHAR}, #{deductamount,jdbcType=INTEGER}, #{updatetime,jdbcType=TIMESTAMP}
+        )
+    </insert>
+    <insert id="insertSelective" parameterType="com.mtime.client.retail.model.Order" >
+        insert into Order
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="orderid != null" >
+                OrderID,
+            </if>
+            <if test="operatorid != null" >
+                OperatorID,
+            </if>
+            <if test="terminalid != null" >
+                TerminalID,
+            </if>
+            <if test="storeid != null" >
+                StoreID,
+            </if>
+            <if test="warehouseid != null" >
+                WarehouseID,
+            </if>
+            <if test="orderstatus != null" >
+                OrderStatus,
+            </if>
+            <if test="ordercode != null" >
+                OrderCode,
+            </if>
+            <if test="storeordercode != null" >
+                StoreOrderCode,
+            </if>
+            <if test="paystatus != null" >
+                PayStatus,
+            </if>
+            <if test="paytime != null" >
+                PayTime,
+            </if>
+            <if test="quantity != null" >
+                Quantity,
+            </if>
+            <if test="amount != null" >
+                Amount,
+            </if>
+            <if test="actualamount != null" >
+                ActualAmount,
+            </if>
+            <if test="createtime != null" >
+                CreateTime,
+            </if>
+            <if test="note != null" >
+                Note,
+            </if>
+            <if test="cancelremark != null" >
+                CancelRemark,
+            </if>
+            <if test="deductamount != null" >
+                DeductAmount,
+            </if>
+            <if test="updatetime != null" >
+                UpdateTime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="orderid != null" >
+                #{orderid,jdbcType=INTEGER},
+            </if>
+            <if test="operatorid != null" >
+                #{operatorid,jdbcType=INTEGER},
+            </if>
+            <if test="terminalid != null" >
+                #{terminalid,jdbcType=INTEGER},
+            </if>
+            <if test="storeid != null" >
+                #{storeid,jdbcType=INTEGER},
+            </if>
+            <if test="warehouseid != null" >
+                #{warehouseid,jdbcType=INTEGER},
+            </if>
+            <if test="orderstatus != null" >
+                #{orderstatus,jdbcType=INTEGER},
+            </if>
+            <if test="ordercode != null" >
+                #{ordercode,jdbcType=VARCHAR},
+            </if>
+            <if test="storeordercode != null" >
+                #{storeordercode,jdbcType=VARCHAR},
+            </if>
+            <if test="paystatus != null" >
+                #{paystatus,jdbcType=INTEGER},
+            </if>
+            <if test="paytime != null" >
+                #{paytime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="quantity != null" >
+                #{quantity,jdbcType=INTEGER},
+            </if>
+            <if test="amount != null" >
+                #{amount,jdbcType=INTEGER},
+            </if>
+            <if test="actualamount != null" >
+                #{actualamount,jdbcType=INTEGER},
+            </if>
+            <if test="createtime != null" >
+                #{createtime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null" >
+                #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="cancelremark != null" >
+                #{cancelremark,jdbcType=VARCHAR},
+            </if>
+            <if test="deductamount != null" >
+                #{deductamount,jdbcType=INTEGER},
+            </if>
+            <if test="updatetime != null" >
+                #{updatetime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.mtime.client.retail.model.Order" >
+        update Order
+        <set >
+            <if test="operatorid != null" >
+                OperatorID = #{operatorid,jdbcType=INTEGER},
+            </if>
+            <if test="terminalid != null" >
+                TerminalID = #{terminalid,jdbcType=INTEGER},
+            </if>
+            <if test="storeid != null" >
+                StoreID = #{storeid,jdbcType=INTEGER},
+            </if>
+            <if test="warehouseid != null" >
+                WarehouseID = #{warehouseid,jdbcType=INTEGER},
+            </if>
+            <if test="orderstatus != null" >
+                OrderStatus = #{orderstatus,jdbcType=INTEGER},
+            </if>
+            <if test="ordercode != null" >
+                OrderCode = #{ordercode,jdbcType=VARCHAR},
+            </if>
+            <if test="storeordercode != null" >
+                StoreOrderCode = #{storeordercode,jdbcType=VARCHAR},
+            </if>
+            <if test="paystatus != null" >
+                PayStatus = #{paystatus,jdbcType=INTEGER},
+            </if>
+            <if test="paytime != null" >
+                PayTime = #{paytime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="quantity != null" >
+                Quantity = #{quantity,jdbcType=INTEGER},
+            </if>
+            <if test="amount != null" >
+                Amount = #{amount,jdbcType=INTEGER},
+            </if>
+            <if test="actualamount != null" >
+                ActualAmount = #{actualamount,jdbcType=INTEGER},
+            </if>
+            <if test="createtime != null" >
+                CreateTime = #{createtime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null" >
+                Note = #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="cancelremark != null" >
+                CancelRemark = #{cancelremark,jdbcType=VARCHAR},
+            </if>
+            <if test="deductamount != null" >
+                DeductAmount = #{deductamount,jdbcType=INTEGER},
+            </if>
+            <if test="updatetime != null" >
+                UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where OrderID = #{orderid,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.mtime.client.retail.model.Order" >
+        update Order
+        set OperatorID = #{operatorid,jdbcType=INTEGER},
+        TerminalID = #{terminalid,jdbcType=INTEGER},
+        StoreID = #{storeid,jdbcType=INTEGER},
+        WarehouseID = #{warehouseid,jdbcType=INTEGER},
+        OrderStatus = #{orderstatus,jdbcType=INTEGER},
+        OrderCode = #{ordercode,jdbcType=VARCHAR},
+        StoreOrderCode = #{storeordercode,jdbcType=VARCHAR},
+        PayStatus = #{paystatus,jdbcType=INTEGER},
+        PayTime = #{paytime,jdbcType=TIMESTAMP},
+        Quantity = #{quantity,jdbcType=INTEGER},
+        Amount = #{amount,jdbcType=INTEGER},
+        ActualAmount = #{actualamount,jdbcType=INTEGER},
+        CreateTime = #{createtime,jdbcType=TIMESTAMP},
+        Note = #{note,jdbcType=VARCHAR},
+        CancelRemark = #{cancelremark,jdbcType=VARCHAR},
+        DeductAmount = #{deductamount,jdbcType=INTEGER},
+        UpdateTime = #{updatetime,jdbcType=TIMESTAMP}
+        where OrderID = #{orderid,jdbcType=INTEGER}
+    </update>
+</mapper>
